@@ -1,0 +1,19 @@
+---
+language: rust
+dist: trusty
+sudo: false
+
+cache:
+  cargo: true
+  apt: true
+
+matrix:
+  include:
+  - rust: nightly
+
+script:
+  - cargo test
+
+notifications:
+  email:
+    on_success: never
