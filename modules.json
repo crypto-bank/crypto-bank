@@ -1,0 +1,31 @@
+{
+    "modules": {
+        "crypto-currency": {
+            "title": "Currency"
+        },
+        "crypto-market": {
+            "title": "Market"
+        },
+        "crypto-market-dealer": {
+            "title": "Market Dealer"
+        },
+        "crypto-market-event": {
+            "title": "Market Event"
+        },
+        "crypto-market-event-log": {
+            "title": "Market Event Log"
+        },
+        "crypto-market-stream": {
+            "title": "Market Stream"
+        },
+        "crypto-market-stream-poloniex": {
+            "title": "Poloniex Stream"
+        },
+        "crypto-market-stream-ws": {
+            "title": "WebSocket Stream"
+        },
+        "crypto-util": {
+            "title": "Utilities"
+        }
+    }
+}
