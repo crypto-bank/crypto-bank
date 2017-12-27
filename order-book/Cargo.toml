@@ -1,0 +1,10 @@
+[package]
+name = "cb-order-book"
+description = "crypto-bank market order book module"
+version = "0.0.1"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+cb-currency = { path = "../currency", version = "0.0.*" }
+cb-market = { path = "../market", version = "0.0.*" }

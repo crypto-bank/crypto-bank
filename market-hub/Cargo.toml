@@ -1,0 +1,9 @@
+[package]
+name = "cb-market-hub"
+description = "crypto-bank market module"
+version = "0.0.1"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+zmq = { git = "https://github.com/erickt/rust-zmq.git" }

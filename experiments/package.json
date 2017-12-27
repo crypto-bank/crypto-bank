@@ -1,0 +1,19 @@
+{
+  "name": "experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cmc-rev.bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "binance": "^1.1.2",
+    "node-bittrex-api": "^0.8.1",
+    "signalr-client": "0.0.17",
+    "signalrjs": "^0.2.2",
+    "zmq": "^2.15.3"
+  }
+}

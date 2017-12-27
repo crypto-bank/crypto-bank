@@ -1,0 +1,17 @@
+[package]
+name = "cb-stream"
+description = "crypto-bank market stream"
+version = "0.0.1"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+serde = "1.*.*"
+bincode = "0.9.*"
+serde_derive = "1.*.*"
+
+futures = "0.1.*"
+multiqueue = "0.3.*"
+
+cb-market = { path = "../market", version = "0.0.*" }
+cb-currency = { path = "../currency", version = "0.0.*" }

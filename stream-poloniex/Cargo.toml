@@ -1,0 +1,29 @@
+[package]
+name = "cb-stream-poloniex"
+description = "crypto-bank poloniex market stream"
+version = "0.1.0"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+chrono = "0.3.*"
+error-chain = "0.11.*"
+serde_json = "1.*.*"
+
+futures = "0.1.*"
+tokio-core = "0.1.*"
+
+cb-currency = { path = "../currency", version = "0.0.*" }
+cb-market = { path = "../market", version = "0.0.*" }
+cb-stream = { path = "../stream", version = "0.0.*" }
+cb-stream-ws = { path = "../stream-ws", version = "0.1.*" }
+cb-util = { path = "../util", version = "0.1.*" }
+
+websocket = "0.20.*"
+
+[dev-dependencies]
+tokio-core = "0.1.*"
+multiqueue = "0.3.*"
+env_logger = "0.4.*"
+
+log = "0.3.*"

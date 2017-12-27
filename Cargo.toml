@@ -5,10 +5,13 @@ version = "0.0.1"
 license = "Apache-2.0"
 authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
 
+[lib]
+path = "lib.rs"
+
 [dependencies]
-crypto-currency = "0.0.*"
-crypto-market = "0.0.*"
-crypto-market-event = "0.0.*"
-crypto-market-stream = "0.0.*"
-crypto-market-stream-ws = "0.0.*"
-crypto-util = "0.0.*"
+cb-currency = { version = "0.0.*", path = "./currency" }
+cb-market = { version = "0.0.*", path = "./market" }
+cb-market-event = { version = "0.0.*", path = "./market-event" }
+cb-stream = { version = "0.0.*", path = "./stream" }
+cb-stream-ws = { version = "0.0.*", path = "./stream-ws" }
+cb-util = { version = "0.1.*", path = "./util" }

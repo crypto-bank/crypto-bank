@@ -1,0 +1,21 @@
+[package]
+name = "cb-stream-ws"
+description = "crypto-bank markets websocket streams"
+version = "0.1.0"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+log = "0.3.*"
+chrono = "0.3.*"
+serde_json = "1.*.*"
+
+futures = "0.1.*"
+tokio-core = "0.1.*"
+
+cb-currency = { path = "../currency", version = "0.0.*" }
+cb-market = { path = "../market", version = "0.0.*" }
+cb-stream = { path = "../stream", version = "0.0.*" }
+cb-util = { path = "../util", version = "0.1.*" }
+
+websocket = "0.20.*"

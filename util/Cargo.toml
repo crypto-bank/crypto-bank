@@ -1,0 +1,11 @@
+[package]
+name = "cb-util"
+description = "crypto-bank utilities"
+version = "0.1.0"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+futures = "0.1.*"
+serde_json = "1.*.*"
+error-chain = "0.11.*"
