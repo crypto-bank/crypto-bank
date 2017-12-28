@@ -148,12 +148,12 @@ mod tests {
         if let &Event::Order(ref o) = msg.events.get(0).unwrap() {
             assert_eq!(o, &create_order());
         } else {
-            panic!("expecter order");
+            panic!("expected order");
         }
         if let &Event::Trade(ref t) = msg.events.get(1).unwrap() {
             assert_eq!(t, &create_trade());
         } else {
-            panic!("expecter trade");
+            panic!("expected trade");
         }
     }
 
