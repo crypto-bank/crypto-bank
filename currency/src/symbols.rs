@@ -35,8 +35,8 @@ pub enum Symbol {
     ABY = 12,
     /// AsiaCoin
     AC = 13,
-    /// AdCoin
-    ACC = 14,
+    /// Ace
+    ACE = 14,
     /// Aces
     ACES = 15,
     /// Avoncoin
@@ -93,12 +93,10 @@ pub enum Symbol {
     ALTC = 41,
     /// AltCommunity Coin
     ALTCOM = 42,
-    /// Amber
+    /// Ambrosus
     AMB = 43,
     /// AmberCoin
     AMBER = 44,
-    /// AMIS
-    AMIS = 45,
     /// Ammo Rewards
     AMMO = 46,
     /// Synereo
@@ -139,16 +137,12 @@ pub enum Symbol {
     ART = 64,
     /// AllSafe
     ASAFE2 = 65,
-    /// AsicCoin
-    ASC = 66,
     /// Aseancoin
     ASN = 67,
     /// AirSwap
     AST = 68,
     /// ATBCoin
     ATB = 69,
-    /// ATC Coin
-    ATCC = 70,
     /// ATLANT
     ATL = 71,
     /// ATMChain
@@ -167,14 +161,10 @@ pub enum Symbol {
     AU = 78,
     /// Auroracoin
     AUR = 79,
-    /// Aureus
-    AURS = 80,
     /// AvatarCoin
     AV = 81,
     /// Aventus
     AVT = 82,
-    /// AxFunds
-    AXF = 83,
     /// Axiom
     AXIOM = 84,
     /// SegWit2x [Futures]
@@ -189,17 +179,13 @@ pub enum Symbol {
     BASH = 89,
     /// BitBay
     BAY = 90,
-    /// BigBoobsCoin
-    BBC = 91,
     /// BiblePay
     BBP = 92,
     /// BCAP
     BCAP = 93,
     /// BitConnect
     BCC = 94,
-    /// BitcoinCashScrypt
-    BCCS = 95,
-    /// BitcoinFast
+    /// Bitcoin Fast
     BCF = 96,
     /// Bytecoin
     BCN = 97,
@@ -277,7 +263,7 @@ pub enum Symbol {
     BLRY = 133,
     /// BlueCoin
     BLU = 134,
-    /// Ethereum Blue
+    /// BLUE
     BLUE = 135,
     /// Blockchain Index
     BLX = 136,
@@ -291,7 +277,7 @@ pub enum Symbol {
     BNT = 140,
     /// BnrtxCoin
     BNX = 141,
-    /// Doubloon
+    /// BOAT
     BOAT = 142,
     /// Bolivarcoin
     BOLI = 143,
@@ -303,13 +289,9 @@ pub enum Symbol {
     BPC = 146,
     /// bitqy
     BQ = 147,
-    /// BBQCoin
-    BQC = 148,
-    /// Bitquence
-    BQX = 149,
     /// Braincoin
     BRAIN = 150,
-    /// BRAT
+    /// BROTHER
     BRAT = 151,
     /// BriaCoin
     BRIA = 152,
@@ -395,8 +377,6 @@ pub enum Symbol {
     CAB = 192,
     /// CacheCoin
     CACH = 193,
-    /// Bitland
-    CADASTRAL = 194,
     /// Change
     CAG = 195,
     /// CageCoin
@@ -405,8 +385,6 @@ pub enum Symbol {
     CALC = 197,
     /// CannabisCoin
     CANN = 198,
-    /// Bottlecaps
-    CAP = 199,
     /// Carboncoin
     CARBON = 200,
     /// Casino
@@ -419,7 +397,7 @@ pub enum Symbol {
     CC = 204,
     /// CCMiner
     CCM100 = 205,
-    /// Cannacoin
+    /// CannaCoin
     CCN = 206,
     /// CryptoCarbon
     CCRB = 207,
@@ -461,8 +439,6 @@ pub enum Symbol {
     CMP = 225,
     /// CampusCoin
     CMPCO = 226,
-    /// Comet
-    CMT = 227,
     /// CHNCoin
     CNC = 228,
     /// Cindicator
@@ -557,8 +533,8 @@ pub enum Symbol {
     DALC = 273,
     /// Darcrus
     DAR = 274,
-    /// DAS
-    DAS = 275,
+    /// Cryptopay
+    CPAY = 275,
     /// Dash
     DASH = 276,
     /// Dashs
@@ -649,8 +625,6 @@ pub enum Symbol {
     DP = 319,
     /// DPAY
     DPAY = 320,
-    /// DT Token
-    DRACO = 321,
     /// Dreamcoin
     DRM = 322,
     /// Digital Rupees
@@ -669,8 +643,6 @@ pub enum Symbol {
     DUO = 329,
     /// Dutch Coin
     DUTCH = 330,
-    /// Devcoin
-    DVC = 331,
     /// Dynamic
     DYN = 332,
     /// E4ROW
@@ -745,8 +717,6 @@ pub enum Symbol {
     EMC2 = 367,
     /// Emerald Crypto
     EMD = 368,
-    /// EMoneyPower
-    EMP = 369,
     /// Ethereum Movie Venture
     EMV = 370,
     /// Enigma
@@ -783,8 +753,6 @@ pub enum Symbol {
     ETN = 386,
     /// Metaverse ETP
     ETP = 387,
-    /// Etherx
-    ETX = 388,
     /// Eurocoin
     EUC = 389,
     /// eUSD
@@ -799,8 +767,6 @@ pub enum Symbol {
     EVX = 394,
     /// ExclusiveCoin
     EXCL = 395,
-    /// Excelcoin
-    EXL = 396,
     /// ExchangeN
     EXN = 397,
     /// Expanse
@@ -1013,8 +979,6 @@ pub enum Symbol {
     HGT = 501,
     /// High Gain
     HIGH = 502,
-    /// Hacker Gold
-    HKG = 503,
     /// HarmonyCoin
     HMC = 504,
     /// HempCoin
@@ -1031,7 +995,7 @@ pub enum Symbol {
     HSR = 510,
     /// HitCoin
     HTC = 511,
-    /// HTMLCOIN
+    /// HTML5COIN
     HTML5 = 512,
     /// HunterCoin
     HUC = 513,
@@ -1063,8 +1027,6 @@ pub enum Symbol {
     ICOO = 526,
     /// ICOS
     ICOS = 527,
-    /// ICON
-    ICX = 528,
     /// iEthereum
     IETH = 529,
     /// Infinitecoin
@@ -1127,8 +1089,6 @@ pub enum Symbol {
     JIN = 558,
     /// Jinn
     JINN = 559,
-    /// JIO Token
-    JIO = 560,
     /// Janus
     JNS = 561,
     /// JobsCoin
@@ -1149,8 +1109,6 @@ pub enum Symbol {
     KED = 569,
     /// KekCoin
     KEK = 570,
-    /// KexCoin
-    KEXCOIN = 571,
     /// KibiCoin
     KIC = 572,
     /// KickCoin
@@ -1167,7 +1125,7 @@ pub enum Symbol {
     KOBO = 578,
     /// Kore
     KORE = 579,
-    /// Karbowanec
+    /// Karbo
     KRB = 580,
     /// Kronecoin
     KRONE = 581,
@@ -1231,8 +1189,6 @@ pub enum Symbol {
     LSK = 610,
     /// LiteBar
     LTB = 611,
-    /// LTBcoin
-    LTBC = 612,
     /// Litecred
     LTCR = 613,
     /// LiteCoin Ultra
@@ -1293,7 +1249,7 @@ pub enum Symbol {
     MDA = 641,
     /// Megacoin
     MEC = 642,
-    /// Memetic
+    /// Memetic / PepeCoin
     MEME = 643,
     /// PeopleCoin
     MEN = 644,
@@ -1303,8 +1259,6 @@ pub enum Symbol {
     MER = 646,
     /// MetalCoin
     METAL = 647,
-    /// Mind Gene
-    MG = 648,
     /// Magnum
     MGM = 649,
     /// MobileGo
@@ -1317,8 +1271,6 @@ pub enum Symbol {
     MINT = 653,
     /// IOTA
     MIOTA = 654,
-    /// MIYUCoin
-    MIU = 655,
     /// Melon
     MLN = 656,
     /// MMXVI
@@ -1347,8 +1299,6 @@ pub enum Symbol {
     MOON = 668,
     /// Motocoin
     MOTO = 669,
-    /// microCoin
-    MRC = 670,
     /// GanjaCoin
     MRJA = 671,
     /// MorningStar
@@ -1375,8 +1325,6 @@ pub enum Symbol {
     MTNC = 682,
     /// MonetaryUnit
     MUE = 683,
-    /// MikeTheMug
-    MUG = 684,
     /// Musicoin
     MUSIC = 685,
     /// MarteXcoin
@@ -1391,18 +1339,14 @@ pub enum Symbol {
     NAMO = 690,
     /// Project-X
     NANOX = 691,
-    /// Nebulas Token
+    /// Nebulas
     NAS = 692,
-    /// NautilusCoin
-    NAUT = 693,
     /// NAV Coin
     NAV = 694,
     /// BitCentavo
     NBE = 695,
     /// netBit
     NBIT = 696,
-    /// NeuroDAO
-    NDAO = 697,
     /// NEVERDIE
     NDC = 698,
     /// Neblio
@@ -1439,8 +1383,6 @@ pub enum Symbol {
     NSR = 714,
     /// Natcoin
     NTC = 715,
-    /// Neptune Classic
-    NTCC = 716,
     /// Fujinto
     NTO = 717,
     /// Neutron
@@ -1459,8 +1401,6 @@ pub enum Symbol {
     NXS = 724,
     /// Nxt
     NXT = 725,
-    /// Nexxus
-    NXX = 726,
     /// Nyancoin
     NYAN = 727,
     /// NewYorkCoin
@@ -1481,8 +1421,6 @@ pub enum Symbol {
     ODN = 735,
     /// Cthulhu Offerings
     OFF = 736,
-    /// OHM
-    OHM = 737,
     /// OKCash
     OK = 738,
     /// Omicron
@@ -1553,8 +1491,6 @@ pub enum Symbol {
     PHO = 771,
     /// Philosopher Stones
     PHS = 772,
-    /// PiCoin
-    PI = 773,
     /// PIECoin
     PIE = 774,
     /// Piggycoin
@@ -1629,14 +1565,10 @@ pub enum Symbol {
     PRM = 809,
     /// Protean
     PRN = 810,
-    /// Propy
-    PRO = 811,
     /// ProCurrency
     PROC = 812,
     /// Printerium
     PRX = 813,
-    /// Pesobit
-    PSB = 814,
     /// Primas
     PST = 815,
     /// Psilocybin
@@ -1651,8 +1583,6 @@ pub enum Symbol {
     PURA = 820,
     /// PutinCoin
     PUT = 821,
-    /// Powercoin
-    PWR = 822,
     /// PX
     PX = 823,
     /// Phoenixcoin
@@ -1669,8 +1599,6 @@ pub enum Symbol {
     QBC = 829,
     /// Qibuck Asset
     QBK = 830,
-    /// Cubits
-    QBT = 831,
     /// QuazarCoin
     QCN = 832,
     /// Qora
@@ -1721,8 +1649,6 @@ pub enum Symbol {
     REP = 855,
     /// Request Network
     REQ = 856,
-    /// Revenu
-    REV = 857,
     /// REX
     REX = 858,
     /// RHFCoin
@@ -1763,8 +1689,6 @@ pub enum Symbol {
     RUNNERS = 876,
     /// Rupee
     RUP = 877,
-    /// BIXC
-    BIXC = 878,
     /// Rustbits
     RUSTBITS = 879,
     /// Rivetz
@@ -1821,8 +1745,6 @@ pub enum Symbol {
     SHORTY = 905,
     /// SIBCoin
     SIB = 906,
-    /// Swisscoin
-    SIC = 907,
     /// Smart Investment Fund Token
     SIFT = 908,
     /// SIGMAcoin
@@ -1849,20 +1771,14 @@ pub enum Symbol {
     SLG = 919,
     /// Sling
     SLING = 920,
-    /// Slimcoin
-    SLM = 921,
     /// SolarCoin
     SLR = 922,
     /// SaluS
     SLS = 923,
-    /// SmartCash
-    SMART = 924,
     /// SmartCoin
     SMC = 925,
     /// SmileyCoin
     SMLY = 926,
-    /// Smoke
-    SMOKE = 927,
     /// SnakeEyes
     SNAKE = 928,
     /// SunContract
@@ -1889,8 +1805,6 @@ pub enum Symbol {
     SONG = 939,
     /// SoonCoin
     SOON = 940,
-    /// SoulCoin
-    SOUL = 941,
     /// SpaceCoin
     SPACE = 942,
     /// SproutsExtreme
@@ -1911,8 +1825,6 @@ pub enum Symbol {
     STA = 950,
     /// Startcoin
     START = 951,
-    /// Stakecoin
-    STCN = 952,
     /// Steem
     STEEM = 953,
     /// Steps
@@ -2057,8 +1969,6 @@ pub enum Symbol {
     TURBO = 1023,
     /// TransferCoin
     TX = 1024,
-    /// Tyrocoin
-    TYC = 1025,
     /// Tychocoin
     TYCHO = 1026,
     /// TrezarCoin
@@ -2123,14 +2033,10 @@ pub enum Symbol {
     VASH = 1056,
     /// VirtualCoin
     VC = 1057,
-    /// Vector
+    /// VectorAI
     VEC2 = 1058,
-    /// VeChain
-    VEN = 1059,
     /// Veritaseum
     VERI = 1060,
-    /// VegasCoin
-    VGC = 1061,
     /// Viacoin
     VIA = 1062,
     /// Viberate
@@ -2189,16 +2095,10 @@ pub enum Symbol {
     WAY = 1089,
     /// Wild Beast Block
     WBB = 1090,
-    /// WalletBuildersCoin
-    WBC = 1091,
     /// Waves Community Token
     WCT = 1092,
     /// WorldCoin
     WDC = 1093,
-    /// Wowecoin
-    WEC = 1094,
-    /// Wexcoin
-    WEX = 1095,
     /// WavesGo
     WGO = 1096,
     /// Wagerr
@@ -2273,7 +2173,7 @@ pub enum Symbol {
     XEM = 1131,
     /// Footy Cash
     XFT = 1132,
-    /// GO! Coin
+    /// XGOX
     XGOX = 1133,
     /// GoldReserve
     XGR = 1134,
@@ -2287,11 +2187,11 @@ pub enum Symbol {
     XJO = 1138,
     /// LeviarCoin
     XLC = 1139,
-    /// Stellar Lumens
+    /// Stellar
     XLM = 1140,
     /// Solaris
     XLR = 1141,
-    /// MonacoCoin
+    /// Monoeci
     XMCC = 1142,
     /// Magi
     XMG = 1143,
@@ -2307,7 +2207,7 @@ pub enum Symbol {
     XOC = 1148,
     /// Internet of Things
     XOT = 1149,
-    /// XP
+    /// Experience Points
     XP = 1150,
     /// XPlay
     XPA = 1151,
@@ -2333,7 +2233,7 @@ pub enum Symbol {
     XRL = 1161,
     /// Royalties
     XRY = 1162,
-    /// Shield Coin
+    /// SHIELD
     XSH = 1163,
     /// Spectrecoin
     XSPEC = 1164,
@@ -2341,8 +2241,6 @@ pub enum Symbol {
     XST = 1165,
     /// Safe Trade Coin
     XSTC = 1166,
-    /// TileCoin
-    XTC = 1167,
     /// XTD Coin
     XTD = 1168,
     /// Tao
@@ -2375,8 +2273,6 @@ pub enum Symbol {
     YOYOW = 1182,
     /// Zilbercoin
     ZBC = 1183,
-    /// ZcCoin
-    ZCC = 1184,
     /// ZClassic
     ZCL = 1185,
     /// Zeitcoin
@@ -2425,6 +2321,318 @@ pub enum Symbol {
     NIO = 1207,
     /// Unikoin Gold
     UKG = 1208,
+    /// Abjcoin
+    ABJ = 1209,
+    /// Aerium
+    AERM = 1210,
+    /// POLY AI
+    AI = 1211,
+    /// ALQO
+    ALQO = 1212,
+    /// MicroMoney
+    AMM = 1213,
+    /// Aeron
+    ARN = 1214,
+    /// Astro
+    ASTRO = 1215,
+    /// B2B
+    B2B = 1216,
+    /// Boolberry
+    BBR = 1217,
+    /// BitBoost
+    BBT = 1218,
+    /// Bitcoin Diamond
+    BCD = 1219,
+    /// BlockCDN
+    BCDN = 1220,
+    /// BitcoinX [Futures]
+    BCX = 1221,
+    /// Bibox Token
+    BIX = 1222,
+    /// Bounty0x
+    BNTY = 1223,
+    /// Bonpay
+    BON = 1224,
+    /// Bodhi
+    BOT = 1225,
+    /// Blockpool
+    BPL = 1226,
+    /// Bread
+    BRD = 1227,
+    /// Bitcoin2x
+    BTC2X = 1228,
+    /// Bitair
+    BTCA = 1229,
+    /// BitSerial
+    BTE = 1230,
+    /// Bulwark
+    BWK = 1231,
+    /// Cappasity
+    CAPP = 1232,
+    /// Ccore
+    CCO = 1233,
+    /// Confido
+    CFD = 1234,
+    /// CrowdCoin
+    CRC = 1235,
+    /// Verify
+    CRED = 1236,
+    /// Corethum
+    CRTM = 1237,
+    /// CarTaxi Token
+    CTX = 1238,
+    /// Dai
+    DAI = 1239,
+    /// Datum
+    DAT = 1240,
+    /// DavorCoin
+    DAV = 1241,
+    /// DecentBet
+    DBET = 1242,
+    /// DEW
+    DEW = 1243,
+    /// DigiPulse
+    DGPT = 1244,
+    /// DIMCOIN
+    DIM = 1245,
+    /// Divi
+    DIVX = 1246,
+    /// EncrypGen
+    DNA = 1247,
+    /// Delphy
+    DPY = 1248,
+    /// Dragonchain
+    DRGN = 1249,
+    /// DCORP
+    DRP = 1250,
+    /// Dynamic Trading Rights
+    DTR = 1251,
+    /// EA Coin
+    EAG = 1252,
+    /// EagleCoin
+    EAGLE = 1253,
+    /// eBitcoinCash
+    EBCH = 1254,
+    /// eBitcoin
+    EBTC = 1255,
+    /// aelf
+    ELF = 1256,
+    /// Emphy
+    EPY = 1257,
+    /// ERC20
+    ERC20 = 1258,
+    /// Eroscoin
+    ERO = 1259,
+    /// Ethos
+    ETHOS = 1260,
+    /// EventChain
+    EVC = 1261,
+    /// Faceblock
+    FBL = 1262,
+    /// Filecoin [Futures]
+    FIL = 1263,
+    /// Flixxo
+    FLIXX = 1264,
+    /// Farad
+    FRD = 1265,
+    /// DimonCoin
+    FUDD = 1266,
+    /// GoByte
+    GBX = 1267,
+    /// GlassCoin
+    GLS = 1268,
+    /// Genaro Network
+    GNX = 1269,
+    /// Grimcoin
+    GRIM = 1270,
+    /// GOLD Reward Token
+    GRX = 1271,
+    /// Gifto
+    GTO = 1272,
+    /// Genesis Vision
+    GVT = 1273,
+    /// Hawala.Today
+    HAT = 1274,
+    /// Interstellar Holdings
+    HOLD = 1275,
+    /// Decision Token
+    HST = 1276,
+    /// HollyWoodCoin
+    HWC = 1277,
+    /// Hyper TV
+    HYTV = 1278,
+    /// Ignis [Futures]
+    IGNIS = 1279,
+    /// Ink
+    INK = 1280,
+    /// Innova
+    INN = 1281,
+    /// Infinity Pay
+    IPY = 1282,
+    /// IoT Chain
+    ITC = 1283,
+    /// IntenseCoin
+    ITNS = 1284,
+    /// Kubera Coin
+    KBR = 1285,
+    /// ETHLend
+    LEND = 1286,
+    /// LockChain
+    LOC = 1287,
+    /// Magnet
+    MAG = 1288,
+    /// MagicCoin
+    MAGE = 1289,
+    /// MediShares
+    MDS = 1290,
+    /// Medibloc
+    MED = 1291,
+    /// Maker
+    MKR = 1292,
+    /// Mincoin
+    MNC = 1293,
+    /// Monkey Project
+    MONK = 1294,
+    /// Mutual Coin
+    MUT = 1295,
+    /// NEO GOLD
+    NEOG = 1296,
+    /// NAGA
+    NGC = 1297,
+    /// Nekonium
+    NUKO = 1298,
+    /// onG.social
+    ONG = 1299,
+    /// Simple Token
+    OST = 1300,
+    /// Oxycoin
+    OXY = 1301,
+    /// Paypex
+    PAYX = 1302,
+    /// Publica
+    PBL = 1303,
+    /// Pioneer Coin
+    PCOIN = 1304,
+    /// Payfair
+    PFR = 1305,
+    /// Phore
+    PHR = 1306,
+    /// Playkey
+    PKT = 1307,
+    /// PlusCoin
+    PLC = 1308,
+    /// PlexCoin
+    PLX = 1309,
+    /// Phantomx
+    PNX = 1310,
+    /// Presearch
+    PRE = 1311,
+    /// Privatix
+    PRIX = 1312,
+    /// Oyster Pearl
+    PRL = 1313,
+    /// QASH
+    QASH = 1314,
+    /// Quantstamp
+    QSP = 1315,
+    /// Raiden Network Token
+    RDN = 1316,
+    /// Rasputin Online Coin
+    ROC = 1317,
+    /// ANRYZE
+    RYZ = 1318,
+    /// SagaCoin
+    SAGA = 1319,
+    /// StrikeBitClub
+    SBC = 1320,
+    /// Super Bitcoin
+    SBTC = 1321,
+    /// Soma
+    SCT = 1322,
+    /// Social Send
+    SEND = 1323,
+    /// Sugar Exchange
+    SGR = 1324,
+    /// SISA
+    SISA = 1325,
+    /// SmartMesh
+    SMT = 1326,
+    /// Snovio
+    SNOV = 1327,
+    /// SpankChain
+    SPANK = 1328,
+    /// SportyFi
+    SPF = 1329,
+    /// SophiaTX
+    SPHTX = 1330,
+    /// SIRIN LABS Token
+    SRN = 1331,
+    /// Sharechain
+    SSS = 1332,
+    /// Starbase
+    STAR = 1333,
+    /// StarCash Network
+    STARS = 1334,
+    /// Santa Coin
+    STC = 1335,
+    /// Storm
+    STORM = 1336,
+    /// bitJob
+    STU = 1337,
+    /// TIES Network
+    TIE = 1338,
+    /// Blocktix
+    TIX = 1339,
+    /// Time New Bank
+    TNB = 1340,
+    /// Tokugawa
+    TOK = 1341,
+    /// Trident Group
+    TRDT = 1342,
+    /// Triaconta
+    TRIA = 1343,
+    /// Energo
+    TSL = 1344,
+    /// UAHPay
+    UAHPAY = 1345,
+    /// United Bitcoin
+    UBTC = 1346,
+    /// Upfiring
+    UFR = 1347,
+    /// Uquid Coin
+    UQC = 1348,
+    /// BLOCKv
+    VEE = 1349,
+    /// VeChain
+    VET = 1350,
+    /// Viuly
+    VIU = 1351,
+    /// VoteCoin
+    VOT = 1352,
+    /// WaBi
+    WABI = 1353,
+    /// WAX
+    WAX = 1354,
+    /// WINCOIN
+    WC = 1355,
+    /// MyWish
+    WISH = 1356,
+    /// Worldcore
+    WRC = 1357,
+    /// Copico
+    XCPO = 1358,
+    /// XYLO
+    XYLO = 1359,
+    /// Yellow Token
+    YEL = 1360,
+    /// YENTEN
+    YTN = 1361,
+    /// ZCash Gold
+    ZCG = 1362,
+    /// Zephyr
+    ZEPH = 1363,
+    /// ZoZoCoin
+    ZZC = 1364,
 }
 
 /// Tries to convert string to a currency `Symbol`.
@@ -2446,7 +2654,7 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "ABN" => Ok(Symbol::ABN),
             "ABY" => Ok(Symbol::ABY),
             "AC" => Ok(Symbol::AC),
-            "ACC" => Ok(Symbol::ACC),
+            "ACE" => Ok(Symbol::ACE),
             "ACES" => Ok(Symbol::ACES),
             "ACN" => Ok(Symbol::ACN),
             "ACOIN" => Ok(Symbol::ACOIN),
@@ -2477,7 +2685,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "ALTCOM" => Ok(Symbol::ALTCOM),
             "AMB" => Ok(Symbol::AMB),
             "AMBER" => Ok(Symbol::AMBER),
-            "AMIS" => Ok(Symbol::AMIS),
             "AMMO" => Ok(Symbol::AMMO),
             "AMP" => Ok(Symbol::AMP),
             "AMS" => Ok(Symbol::AMS),
@@ -2498,11 +2705,9 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "ARK" => Ok(Symbol::ARK),
             "ART" => Ok(Symbol::ART),
             "ASAFE2" => Ok(Symbol::ASAFE2),
-            "ASC" => Ok(Symbol::ASC),
             "ASN" => Ok(Symbol::ASN),
             "AST" => Ok(Symbol::AST),
             "ATB" => Ok(Symbol::ATB),
-            "ATCC" => Ok(Symbol::ATCC),
             "ATL" => Ok(Symbol::ATL),
             "ATM" => Ok(Symbol::ATM),
             "ATMC" => Ok(Symbol::ATMC),
@@ -2512,10 +2717,8 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "ATX" => Ok(Symbol::ATX),
             "AU" => Ok(Symbol::AU),
             "AUR" => Ok(Symbol::AUR),
-            "AURS" => Ok(Symbol::AURS),
             "AV" => Ok(Symbol::AV),
             "AVT" => Ok(Symbol::AVT),
-            "AXF" => Ok(Symbol::AXF),
             "AXIOM" => Ok(Symbol::AXIOM),
             "B2X" => Ok(Symbol::B2X),
             "B3" => Ok(Symbol::B3),
@@ -2523,11 +2726,9 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "BAS" => Ok(Symbol::BAS),
             "BASH" => Ok(Symbol::BASH),
             "BAY" => Ok(Symbol::BAY),
-            "BBC" => Ok(Symbol::BBC),
             "BBP" => Ok(Symbol::BBP),
             "BCAP" => Ok(Symbol::BCAP),
             "BCC" => Ok(Symbol::BCC),
-            "BCCS" => Ok(Symbol::BCCS),
             "BCF" => Ok(Symbol::BCF),
             "BCN" => Ok(Symbol::BCN),
             "BCO" => Ok(Symbol::BCO),
@@ -2580,8 +2781,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "BOST" => Ok(Symbol::BOST),
             "BPC" => Ok(Symbol::BPC),
             "BQ" => Ok(Symbol::BQ),
-            "BQC" => Ok(Symbol::BQC),
-            "BQX" => Ok(Symbol::BQX),
             "BRAIN" => Ok(Symbol::BRAIN),
             "BRAT" => Ok(Symbol::BRAT),
             "BRIA" => Ok(Symbol::BRIA),
@@ -2626,12 +2825,10 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "C2" => Ok(Symbol::C2),
             "CAB" => Ok(Symbol::CAB),
             "CACH" => Ok(Symbol::CACH),
-            "CADASTRAL" => Ok(Symbol::CADASTRAL),
             "CAG" => Ok(Symbol::CAG),
             "CAGE" => Ok(Symbol::CAGE),
             "CALC" => Ok(Symbol::CALC),
             "CANN" => Ok(Symbol::CANN),
-            "CAP" => Ok(Symbol::CAP),
             "CARBON" => Ok(Symbol::CARBON),
             "CASINO" => Ok(Symbol::CASINO),
             "CBD" => Ok(Symbol::CBD),
@@ -2659,7 +2856,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "CME" => Ok(Symbol::CME),
             "CMP" => Ok(Symbol::CMP),
             "CMPCO" => Ok(Symbol::CMPCO),
-            "CMT" => Ok(Symbol::CMT),
             "CNC" => Ok(Symbol::CNC),
             "CND" => Ok(Symbol::CND),
             "CNNC" => Ok(Symbol::CNNC),
@@ -2707,7 +2903,7 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "CYP" => Ok(Symbol::CYP),
             "DALC" => Ok(Symbol::DALC),
             "DAR" => Ok(Symbol::DAR),
-            "DAS" => Ok(Symbol::DAS),
+            "CPAY" => Ok(Symbol::CPAY),
             "DASH" => Ok(Symbol::DASH),
             "DASHS" => Ok(Symbol::DASHS),
             "DATA" => Ok(Symbol::DATA),
@@ -2753,7 +2949,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "DOVU" => Ok(Symbol::DOVU),
             "DP" => Ok(Symbol::DP),
             "DPAY" => Ok(Symbol::DPAY),
-            "DRACO" => Ok(Symbol::DRACO),
             "DRM" => Ok(Symbol::DRM),
             "DRS" => Ok(Symbol::DRS),
             "DRT" => Ok(Symbol::DRT),
@@ -2763,7 +2958,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "DUB" => Ok(Symbol::DUB),
             "DUO" => Ok(Symbol::DUO),
             "DUTCH" => Ok(Symbol::DUTCH),
-            "DVC" => Ok(Symbol::DVC),
             "DYN" => Ok(Symbol::DYN),
             "E4ROW" => Ok(Symbol::E4ROW),
             "EAC" => Ok(Symbol::EAC),
@@ -2801,7 +2995,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "EMC" => Ok(Symbol::EMC),
             "EMC2" => Ok(Symbol::EMC2),
             "EMD" => Ok(Symbol::EMD),
-            "EMP" => Ok(Symbol::EMP),
             "EMV" => Ok(Symbol::EMV),
             "ENG" => Ok(Symbol::ENG),
             "ENJ" => Ok(Symbol::ENJ),
@@ -2820,7 +3013,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "ETHD" => Ok(Symbol::ETHD),
             "ETN" => Ok(Symbol::ETN),
             "ETP" => Ok(Symbol::ETP),
-            "ETX" => Ok(Symbol::ETX),
             "EUC" => Ok(Symbol::EUC),
             "EUSD" => Ok(Symbol::EUSD),
             "EVIL" => Ok(Symbol::EVIL),
@@ -2828,7 +3020,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "EVR" => Ok(Symbol::EVR),
             "EVX" => Ok(Symbol::EVX),
             "EXCL" => Ok(Symbol::EXCL),
-            "EXL" => Ok(Symbol::EXL),
             "EXN" => Ok(Symbol::EXN),
             "EXP" => Ok(Symbol::EXP),
             "EXRN" => Ok(Symbol::EXRN),
@@ -2935,7 +3126,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "HERO" => Ok(Symbol::HERO),
             "HGT" => Ok(Symbol::HGT),
             "HIGH" => Ok(Symbol::HIGH),
-            "HKG" => Ok(Symbol::HKG),
             "HMC" => Ok(Symbol::HMC),
             "HMP" => Ok(Symbol::HMP),
             "HMQ" => Ok(Symbol::HMQ),
@@ -2960,7 +3150,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "ICON" => Ok(Symbol::ICON),
             "ICOO" => Ok(Symbol::ICOO),
             "ICOS" => Ok(Symbol::ICOS),
-            "ICX" => Ok(Symbol::ICX),
             "IETH" => Ok(Symbol::IETH),
             "IFC" => Ok(Symbol::IFC),
             "IFLT" => Ok(Symbol::IFLT),
@@ -2992,7 +3181,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "JET" => Ok(Symbol::JET),
             "JIN" => Ok(Symbol::JIN),
             "JINN" => Ok(Symbol::JINN),
-            "JIO" => Ok(Symbol::JIO),
             "JNS" => Ok(Symbol::JNS),
             "JOBS" => Ok(Symbol::JOBS),
             "JS" => Ok(Symbol::JS),
@@ -3003,7 +3191,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "KCS" => Ok(Symbol::KCS),
             "KED" => Ok(Symbol::KED),
             "KEK" => Ok(Symbol::KEK),
-            "KEXCOIN" => Ok(Symbol::KEXCOIN),
             "KIC" => Ok(Symbol::KIC),
             "KICK" => Ok(Symbol::KICK),
             "KIN" => Ok(Symbol::KIN),
@@ -3044,7 +3231,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "LRC" => Ok(Symbol::LRC),
             "LSK" => Ok(Symbol::LSK),
             "LTB" => Ok(Symbol::LTB),
-            "LTBC" => Ok(Symbol::LTBC),
             "LTCR" => Ok(Symbol::LTCR),
             "LTCU" => Ok(Symbol::LTCU),
             "LTG" => Ok(Symbol::LTG),
@@ -3080,14 +3266,12 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "MEOW" => Ok(Symbol::MEOW),
             "MER" => Ok(Symbol::MER),
             "METAL" => Ok(Symbol::METAL),
-            "MG" => Ok(Symbol::MG),
             "MGM" => Ok(Symbol::MGM),
             "MGO" => Ok(Symbol::MGO),
             "MILO" => Ok(Symbol::MILO),
             "MINEX" => Ok(Symbol::MINEX),
             "MINT" => Ok(Symbol::MINT),
             "MIOTA" => Ok(Symbol::MIOTA),
-            "MIU" => Ok(Symbol::MIU),
             "MLN" => Ok(Symbol::MLN),
             "MMXVI" => Ok(Symbol::MMXVI),
             "MND" => Ok(Symbol::MND),
@@ -3102,7 +3286,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "MONEY" => Ok(Symbol::MONEY),
             "MOON" => Ok(Symbol::MOON),
             "MOTO" => Ok(Symbol::MOTO),
-            "MRC" => Ok(Symbol::MRC),
             "MRJA" => Ok(Symbol::MRJA),
             "MRNG" => Ok(Symbol::MRNG),
             "MRT" => Ok(Symbol::MRT),
@@ -3116,7 +3299,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "MTM" => Ok(Symbol::MTM),
             "MTNC" => Ok(Symbol::MTNC),
             "MUE" => Ok(Symbol::MUE),
-            "MUG" => Ok(Symbol::MUG),
             "MUSIC" => Ok(Symbol::MUSIC),
             "MXT" => Ok(Symbol::MXT),
             "MYB" => Ok(Symbol::MYB),
@@ -3125,11 +3307,9 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "NAMO" => Ok(Symbol::NAMO),
             "NANOX" => Ok(Symbol::NANOX),
             "NAS" => Ok(Symbol::NAS),
-            "NAUT" => Ok(Symbol::NAUT),
             "NAV" => Ok(Symbol::NAV),
             "NBE" => Ok(Symbol::NBE),
             "NBIT" => Ok(Symbol::NBIT),
-            "NDAO" => Ok(Symbol::NDAO),
             "NDC" => Ok(Symbol::NDC),
             "NEBL" => Ok(Symbol::NEBL),
             "NEO" => Ok(Symbol::NEO),
@@ -3148,7 +3328,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "NRO" => Ok(Symbol::NRO),
             "NSR" => Ok(Symbol::NSR),
             "NTC" => Ok(Symbol::NTC),
-            "NTCC" => Ok(Symbol::NTCC),
             "NTO" => Ok(Symbol::NTO),
             "NTRN" => Ok(Symbol::NTRN),
             "NTWK" => Ok(Symbol::NTWK),
@@ -3158,7 +3337,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "NXC" => Ok(Symbol::NXC),
             "NXS" => Ok(Symbol::NXS),
             "NXT" => Ok(Symbol::NXT),
-            "NXX" => Ok(Symbol::NXX),
             "NYAN" => Ok(Symbol::NYAN),
             "NYC" => Ok(Symbol::NYC),
             "OAX" => Ok(Symbol::OAX),
@@ -3169,7 +3347,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "OCT" => Ok(Symbol::OCT),
             "ODN" => Ok(Symbol::ODN),
             "OFF" => Ok(Symbol::OFF),
-            "OHM" => Ok(Symbol::OHM),
             "OK" => Ok(Symbol::OK),
             "OMC" => Ok(Symbol::OMC),
             "OMG" => Ok(Symbol::OMG),
@@ -3205,7 +3382,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "PGL" => Ok(Symbol::PGL),
             "PHO" => Ok(Symbol::PHO),
             "PHS" => Ok(Symbol::PHS),
-            "PI" => Ok(Symbol::PI),
             "PIE" => Ok(Symbol::PIE),
             "PIGGY" => Ok(Symbol::PIGGY),
             "PING" => Ok(Symbol::PING),
@@ -3243,10 +3419,8 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "PRIMU" => Ok(Symbol::PRIMU),
             "PRM" => Ok(Symbol::PRM),
             "PRN" => Ok(Symbol::PRN),
-            "PRO" => Ok(Symbol::PRO),
             "PROC" => Ok(Symbol::PROC),
             "PRX" => Ok(Symbol::PRX),
-            "PSB" => Ok(Symbol::PSB),
             "PST" => Ok(Symbol::PST),
             "PSY" => Ok(Symbol::PSY),
             "PTC" => Ok(Symbol::PTC),
@@ -3254,7 +3428,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "PULSE" => Ok(Symbol::PULSE),
             "PURA" => Ok(Symbol::PURA),
             "PUT" => Ok(Symbol::PUT),
-            "PWR" => Ok(Symbol::PWR),
             "PX" => Ok(Symbol::PX),
             "PXC" => Ok(Symbol::PXC),
             "PXI" => Ok(Symbol::PXI),
@@ -3263,7 +3436,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "QAU" => Ok(Symbol::QAU),
             "QBC" => Ok(Symbol::QBC),
             "QBK" => Ok(Symbol::QBK),
-            "QBT" => Ok(Symbol::QBT),
             "QCN" => Ok(Symbol::QCN),
             "QORA" => Ok(Symbol::QORA),
             "QRK" => Ok(Symbol::QRK),
@@ -3289,7 +3461,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "REGA" => Ok(Symbol::REGA),
             "REP" => Ok(Symbol::REP),
             "REQ" => Ok(Symbol::REQ),
-            "REV" => Ok(Symbol::REV),
             "REX" => Ok(Symbol::REX),
             "RHFC" => Ok(Symbol::RHFC),
             "RHOC" => Ok(Symbol::RHOC),
@@ -3310,7 +3481,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "RUBIT" => Ok(Symbol::RUBIT),
             "RUNNERS" => Ok(Symbol::RUNNERS),
             "RUP" => Ok(Symbol::RUP),
-            "BIXC" => Ok(Symbol::BIXC),
             "RUSTBITS" => Ok(Symbol::RUSTBITS),
             "RVT" => Ok(Symbol::RVT),
             "SAC" => Ok(Symbol::SAC),
@@ -3339,7 +3509,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "SHND" => Ok(Symbol::SHND),
             "SHORTY" => Ok(Symbol::SHORTY),
             "SIB" => Ok(Symbol::SIB),
-            "SIC" => Ok(Symbol::SIC),
             "SIFT" => Ok(Symbol::SIFT),
             "SIGMA" => Ok(Symbol::SIGMA),
             "SIGT" => Ok(Symbol::SIGT),
@@ -3353,13 +3522,10 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "SLFI" => Ok(Symbol::SLFI),
             "SLG" => Ok(Symbol::SLG),
             "SLING" => Ok(Symbol::SLING),
-            "SLM" => Ok(Symbol::SLM),
             "SLR" => Ok(Symbol::SLR),
             "SLS" => Ok(Symbol::SLS),
-            "SMART" => Ok(Symbol::SMART),
             "SMC" => Ok(Symbol::SMC),
             "SMLY" => Ok(Symbol::SMLY),
-            "SMOKE" => Ok(Symbol::SMOKE),
             "SNAKE" => Ok(Symbol::SNAKE),
             "SNC" => Ok(Symbol::SNC),
             "SND" => Ok(Symbol::SND),
@@ -3373,7 +3539,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "SOJ" => Ok(Symbol::SOJ),
             "SONG" => Ok(Symbol::SONG),
             "SOON" => Ok(Symbol::SOON),
-            "SOUL" => Ok(Symbol::SOUL),
             "SPACE" => Ok(Symbol::SPACE),
             "SPEX" => Ok(Symbol::SPEX),
             "SPHR" => Ok(Symbol::SPHR),
@@ -3384,7 +3549,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "SRC" => Ok(Symbol::SRC),
             "STA" => Ok(Symbol::STA),
             "START" => Ok(Symbol::START),
-            "STCN" => Ok(Symbol::STCN),
             "STEEM" => Ok(Symbol::STEEM),
             "STEPS" => Ok(Symbol::STEPS),
             "STEX" => Ok(Symbol::STEX),
@@ -3457,7 +3621,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "TTC" => Ok(Symbol::TTC),
             "TURBO" => Ok(Symbol::TURBO),
             "TX" => Ok(Symbol::TX),
-            "TYC" => Ok(Symbol::TYC),
             "TYCHO" => Ok(Symbol::TYCHO),
             "TZC" => Ok(Symbol::TZC),
             "UBQ" => Ok(Symbol::UBQ),
@@ -3491,9 +3654,7 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "VASH" => Ok(Symbol::VASH),
             "VC" => Ok(Symbol::VC),
             "VEC2" => Ok(Symbol::VEC2),
-            "VEN" => Ok(Symbol::VEN),
             "VERI" => Ok(Symbol::VERI),
-            "VGC" => Ok(Symbol::VGC),
             "VIA" => Ok(Symbol::VIA),
             "VIB" => Ok(Symbol::VIB),
             "VIBE" => Ok(Symbol::VIBE),
@@ -3523,11 +3684,8 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "WAVES" => Ok(Symbol::WAVES),
             "WAY" => Ok(Symbol::WAY),
             "WBB" => Ok(Symbol::WBB),
-            "WBC" => Ok(Symbol::WBC),
             "WCT" => Ok(Symbol::WCT),
             "WDC" => Ok(Symbol::WDC),
-            "WEC" => Ok(Symbol::WEC),
-            "WEX" => Ok(Symbol::WEX),
             "WGO" => Ok(Symbol::WGO),
             "WGR" => Ok(Symbol::WGR),
             "WHL" => Ok(Symbol::WHL),
@@ -3599,7 +3757,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "XSPEC" => Ok(Symbol::XSPEC),
             "XST" => Ok(Symbol::XST),
             "XSTC" => Ok(Symbol::XSTC),
-            "XTC" => Ok(Symbol::XTC),
             "XTD" => Ok(Symbol::XTD),
             "XTO" => Ok(Symbol::XTO),
             "XTZ" => Ok(Symbol::XTZ),
@@ -3616,7 +3773,6 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "YOC" => Ok(Symbol::YOC),
             "YOYOW" => Ok(Symbol::YOYOW),
             "ZBC" => Ok(Symbol::ZBC),
-            "ZCC" => Ok(Symbol::ZCC),
             "ZCL" => Ok(Symbol::ZCL),
             "ZEIT" => Ok(Symbol::ZEIT),
             "ZEN" => Ok(Symbol::ZEN),
@@ -3641,6 +3797,162 @@ impl<'a> TryFrom<&'a str> for Symbol {
             "DSR" => Ok(Symbol::DSR),
             "NIO" => Ok(Symbol::NIO),
             "UKG" => Ok(Symbol::UKG),
+            "ABJ" => Ok(Symbol::ABJ),
+            "AERM" => Ok(Symbol::AERM),
+            "AI" => Ok(Symbol::AI),
+            "ALQO" => Ok(Symbol::ALQO),
+            "AMM" => Ok(Symbol::AMM),
+            "ARN" => Ok(Symbol::ARN),
+            "ASTRO" => Ok(Symbol::ASTRO),
+            "B2B" => Ok(Symbol::B2B),
+            "BBR" => Ok(Symbol::BBR),
+            "BBT" => Ok(Symbol::BBT),
+            "BCD" => Ok(Symbol::BCD),
+            "BCDN" => Ok(Symbol::BCDN),
+            "BCX" => Ok(Symbol::BCX),
+            "BIX" => Ok(Symbol::BIX),
+            "BNTY" => Ok(Symbol::BNTY),
+            "BON" => Ok(Symbol::BON),
+            "BOT" => Ok(Symbol::BOT),
+            "BPL" => Ok(Symbol::BPL),
+            "BRD" => Ok(Symbol::BRD),
+            "BTC2X" => Ok(Symbol::BTC2X),
+            "BTCA" => Ok(Symbol::BTCA),
+            "BTE" => Ok(Symbol::BTE),
+            "BWK" => Ok(Symbol::BWK),
+            "CAPP" => Ok(Symbol::CAPP),
+            "CCO" => Ok(Symbol::CCO),
+            "CFD" => Ok(Symbol::CFD),
+            "CRC" => Ok(Symbol::CRC),
+            "CRED" => Ok(Symbol::CRED),
+            "CRTM" => Ok(Symbol::CRTM),
+            "CTX" => Ok(Symbol::CTX),
+            "DAI" => Ok(Symbol::DAI),
+            "DAT" => Ok(Symbol::DAT),
+            "DAV" => Ok(Symbol::DAV),
+            "DBET" => Ok(Symbol::DBET),
+            "DEW" => Ok(Symbol::DEW),
+            "DGPT" => Ok(Symbol::DGPT),
+            "DIM" => Ok(Symbol::DIM),
+            "DIVX" => Ok(Symbol::DIVX),
+            "DNA" => Ok(Symbol::DNA),
+            "DPY" => Ok(Symbol::DPY),
+            "DRGN" => Ok(Symbol::DRGN),
+            "DRP" => Ok(Symbol::DRP),
+            "DTR" => Ok(Symbol::DTR),
+            "EAG" => Ok(Symbol::EAG),
+            "EAGLE" => Ok(Symbol::EAGLE),
+            "EBCH" => Ok(Symbol::EBCH),
+            "EBTC" => Ok(Symbol::EBTC),
+            "ELF" => Ok(Symbol::ELF),
+            "EPY" => Ok(Symbol::EPY),
+            "ERC20" => Ok(Symbol::ERC20),
+            "ERO" => Ok(Symbol::ERO),
+            "ETHOS" => Ok(Symbol::ETHOS),
+            "EVC" => Ok(Symbol::EVC),
+            "FBL" => Ok(Symbol::FBL),
+            "FIL" => Ok(Symbol::FIL),
+            "FLIXX" => Ok(Symbol::FLIXX),
+            "FRD" => Ok(Symbol::FRD),
+            "FUDD" => Ok(Symbol::FUDD),
+            "GBX" => Ok(Symbol::GBX),
+            "GLS" => Ok(Symbol::GLS),
+            "GNX" => Ok(Symbol::GNX),
+            "GRIM" => Ok(Symbol::GRIM),
+            "GRX" => Ok(Symbol::GRX),
+            "GTO" => Ok(Symbol::GTO),
+            "GVT" => Ok(Symbol::GVT),
+            "HAT" => Ok(Symbol::HAT),
+            "HOLD" => Ok(Symbol::HOLD),
+            "HST" => Ok(Symbol::HST),
+            "HWC" => Ok(Symbol::HWC),
+            "HYTV" => Ok(Symbol::HYTV),
+            "IGNIS" => Ok(Symbol::IGNIS),
+            "INK" => Ok(Symbol::INK),
+            "INN" => Ok(Symbol::INN),
+            "IPY" => Ok(Symbol::IPY),
+            "ITC" => Ok(Symbol::ITC),
+            "ITNS" => Ok(Symbol::ITNS),
+            "KBR" => Ok(Symbol::KBR),
+            "LEND" => Ok(Symbol::LEND),
+            "LOC" => Ok(Symbol::LOC),
+            "MAG" => Ok(Symbol::MAG),
+            "MAGE" => Ok(Symbol::MAGE),
+            "MDS" => Ok(Symbol::MDS),
+            "MED" => Ok(Symbol::MED),
+            "MKR" => Ok(Symbol::MKR),
+            "MNC" => Ok(Symbol::MNC),
+            "MONK" => Ok(Symbol::MONK),
+            "MUT" => Ok(Symbol::MUT),
+            "NEOG" => Ok(Symbol::NEOG),
+            "NGC" => Ok(Symbol::NGC),
+            "NUKO" => Ok(Symbol::NUKO),
+            "ONG" => Ok(Symbol::ONG),
+            "OST" => Ok(Symbol::OST),
+            "OXY" => Ok(Symbol::OXY),
+            "PAYX" => Ok(Symbol::PAYX),
+            "PBL" => Ok(Symbol::PBL),
+            "PCOIN" => Ok(Symbol::PCOIN),
+            "PFR" => Ok(Symbol::PFR),
+            "PHR" => Ok(Symbol::PHR),
+            "PKT" => Ok(Symbol::PKT),
+            "PLC" => Ok(Symbol::PLC),
+            "PLX" => Ok(Symbol::PLX),
+            "PNX" => Ok(Symbol::PNX),
+            "PRE" => Ok(Symbol::PRE),
+            "PRIX" => Ok(Symbol::PRIX),
+            "PRL" => Ok(Symbol::PRL),
+            "QASH" => Ok(Symbol::QASH),
+            "QSP" => Ok(Symbol::QSP),
+            "RDN" => Ok(Symbol::RDN),
+            "ROC" => Ok(Symbol::ROC),
+            "RYZ" => Ok(Symbol::RYZ),
+            "SAGA" => Ok(Symbol::SAGA),
+            "SBC" => Ok(Symbol::SBC),
+            "SBTC" => Ok(Symbol::SBTC),
+            "SCT" => Ok(Symbol::SCT),
+            "SEND" => Ok(Symbol::SEND),
+            "SGR" => Ok(Symbol::SGR),
+            "SISA" => Ok(Symbol::SISA),
+            "SMT" => Ok(Symbol::SMT),
+            "SNOV" => Ok(Symbol::SNOV),
+            "SPANK" => Ok(Symbol::SPANK),
+            "SPF" => Ok(Symbol::SPF),
+            "SPHTX" => Ok(Symbol::SPHTX),
+            "SRN" => Ok(Symbol::SRN),
+            "SSS" => Ok(Symbol::SSS),
+            "STAR" => Ok(Symbol::STAR),
+            "STARS" => Ok(Symbol::STARS),
+            "STC" => Ok(Symbol::STC),
+            "STORM" => Ok(Symbol::STORM),
+            "STU" => Ok(Symbol::STU),
+            "TIE" => Ok(Symbol::TIE),
+            "TIX" => Ok(Symbol::TIX),
+            "TNB" => Ok(Symbol::TNB),
+            "TOK" => Ok(Symbol::TOK),
+            "TRDT" => Ok(Symbol::TRDT),
+            "TRIA" => Ok(Symbol::TRIA),
+            "TSL" => Ok(Symbol::TSL),
+            "UAHPAY" => Ok(Symbol::UAHPAY),
+            "UBTC" => Ok(Symbol::UBTC),
+            "UFR" => Ok(Symbol::UFR),
+            "UQC" => Ok(Symbol::UQC),
+            "VEE" => Ok(Symbol::VEE),
+            "VET" => Ok(Symbol::VET),
+            "VIU" => Ok(Symbol::VIU),
+            "VOT" => Ok(Symbol::VOT),
+            "WABI" => Ok(Symbol::WABI),
+            "WAX" => Ok(Symbol::WAX),
+            "WC" => Ok(Symbol::WC),
+            "WISH" => Ok(Symbol::WISH),
+            "WRC" => Ok(Symbol::WRC),
+            "XCPO" => Ok(Symbol::XCPO),
+            "XYLO" => Ok(Symbol::XYLO),
+            "YEL" => Ok(Symbol::YEL),
+            "YTN" => Ok(Symbol::YTN),
+            "ZCG" => Ok(Symbol::ZCG),
+            "ZEPH" => Ok(Symbol::ZEPH),
+            "ZZC" => Ok(Symbol::ZZC),
             _ => Err(ErrorKind::UnknownCurrency(name.to_owned()).into()),
         }
     }
@@ -3662,7 +3974,7 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::ABN => "ABN",
             &Symbol::ABY => "ABY",
             &Symbol::AC => "AC",
-            &Symbol::ACC => "ACC",
+            &Symbol::ACE => "ACE",
             &Symbol::ACES => "ACES",
             &Symbol::ACN => "ACN",
             &Symbol::ACOIN => "ACOIN",
@@ -3693,7 +4005,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::ALTCOM => "ALTCOM",
             &Symbol::AMB => "AMB",
             &Symbol::AMBER => "AMBER",
-            &Symbol::AMIS => "AMIS",
             &Symbol::AMMO => "AMMO",
             &Symbol::AMP => "AMP",
             &Symbol::AMS => "AMS",
@@ -3714,11 +4025,9 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::ARK => "ARK",
             &Symbol::ART => "ART",
             &Symbol::ASAFE2 => "ASAFE2",
-            &Symbol::ASC => "ASC",
             &Symbol::ASN => "ASN",
             &Symbol::AST => "AST",
             &Symbol::ATB => "ATB",
-            &Symbol::ATCC => "ATCC",
             &Symbol::ATL => "ATL",
             &Symbol::ATM => "ATM",
             &Symbol::ATMC => "ATMC",
@@ -3728,10 +4037,8 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::ATX => "ATX",
             &Symbol::AU => "AU",
             &Symbol::AUR => "AUR",
-            &Symbol::AURS => "AURS",
             &Symbol::AV => "AV",
             &Symbol::AVT => "AVT",
-            &Symbol::AXF => "AXF",
             &Symbol::AXIOM => "AXIOM",
             &Symbol::B2X => "B2X",
             &Symbol::B3 => "B3",
@@ -3739,11 +4046,9 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::BAS => "BAS",
             &Symbol::BASH => "BASH",
             &Symbol::BAY => "BAY",
-            &Symbol::BBC => "BBC",
             &Symbol::BBP => "BBP",
             &Symbol::BCAP => "BCAP",
             &Symbol::BCC => "BCC",
-            &Symbol::BCCS => "BCCS",
             &Symbol::BCF => "BCF",
             &Symbol::BCN => "BCN",
             &Symbol::BCO => "BCO",
@@ -3796,8 +4101,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::BOST => "BOST",
             &Symbol::BPC => "BPC",
             &Symbol::BQ => "BQ",
-            &Symbol::BQC => "BQC",
-            &Symbol::BQX => "BQX",
             &Symbol::BRAIN => "BRAIN",
             &Symbol::BRAT => "BRAT",
             &Symbol::BRIA => "BRIA",
@@ -3842,12 +4145,10 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::C2 => "C2",
             &Symbol::CAB => "CAB",
             &Symbol::CACH => "CACH",
-            &Symbol::CADASTRAL => "CADASTRAL",
             &Symbol::CAG => "CAG",
             &Symbol::CAGE => "CAGE",
             &Symbol::CALC => "CALC",
             &Symbol::CANN => "CANN",
-            &Symbol::CAP => "CAP",
             &Symbol::CARBON => "CARBON",
             &Symbol::CASINO => "CASINO",
             &Symbol::CBD => "CBD",
@@ -3875,7 +4176,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::CME => "CME",
             &Symbol::CMP => "CMP",
             &Symbol::CMPCO => "CMPCO",
-            &Symbol::CMT => "CMT",
             &Symbol::CNC => "CNC",
             &Symbol::CND => "CND",
             &Symbol::CNNC => "CNNC",
@@ -3923,7 +4223,7 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::CYP => "CYP",
             &Symbol::DALC => "DALC",
             &Symbol::DAR => "DAR",
-            &Symbol::DAS => "DAS",
+            &Symbol::CPAY => "CPAY",
             &Symbol::DASH => "DASH",
             &Symbol::DASHS => "DASHS",
             &Symbol::DATA => "DATA",
@@ -3969,7 +4269,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::DOVU => "DOVU",
             &Symbol::DP => "DP",
             &Symbol::DPAY => "DPAY",
-            &Symbol::DRACO => "DRACO",
             &Symbol::DRM => "DRM",
             &Symbol::DRS => "DRS",
             &Symbol::DRT => "DRT",
@@ -3979,7 +4278,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::DUB => "DUB",
             &Symbol::DUO => "DUO",
             &Symbol::DUTCH => "DUTCH",
-            &Symbol::DVC => "DVC",
             &Symbol::DYN => "DYN",
             &Symbol::E4ROW => "E4ROW",
             &Symbol::EAC => "EAC",
@@ -4017,7 +4315,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::EMC => "EMC",
             &Symbol::EMC2 => "EMC2",
             &Symbol::EMD => "EMD",
-            &Symbol::EMP => "EMP",
             &Symbol::EMV => "EMV",
             &Symbol::ENG => "ENG",
             &Symbol::ENJ => "ENJ",
@@ -4036,7 +4333,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::ETHD => "ETHD",
             &Symbol::ETN => "ETN",
             &Symbol::ETP => "ETP",
-            &Symbol::ETX => "ETX",
             &Symbol::EUC => "EUC",
             &Symbol::EUSD => "EUSD",
             &Symbol::EVIL => "EVIL",
@@ -4044,7 +4340,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::EVR => "EVR",
             &Symbol::EVX => "EVX",
             &Symbol::EXCL => "EXCL",
-            &Symbol::EXL => "EXL",
             &Symbol::EXN => "EXN",
             &Symbol::EXP => "EXP",
             &Symbol::EXRN => "EXRN",
@@ -4151,7 +4446,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::HERO => "HERO",
             &Symbol::HGT => "HGT",
             &Symbol::HIGH => "HIGH",
-            &Symbol::HKG => "HKG",
             &Symbol::HMC => "HMC",
             &Symbol::HMP => "HMP",
             &Symbol::HMQ => "HMQ",
@@ -4176,7 +4470,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::ICON => "ICON",
             &Symbol::ICOO => "ICOO",
             &Symbol::ICOS => "ICOS",
-            &Symbol::ICX => "ICX",
             &Symbol::IETH => "IETH",
             &Symbol::IFC => "IFC",
             &Symbol::IFLT => "IFLT",
@@ -4208,7 +4501,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::JET => "JET",
             &Symbol::JIN => "JIN",
             &Symbol::JINN => "JINN",
-            &Symbol::JIO => "JIO",
             &Symbol::JNS => "JNS",
             &Symbol::JOBS => "JOBS",
             &Symbol::JS => "JS",
@@ -4219,7 +4511,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::KCS => "KCS",
             &Symbol::KED => "KED",
             &Symbol::KEK => "KEK",
-            &Symbol::KEXCOIN => "KEXCOIN",
             &Symbol::KIC => "KIC",
             &Symbol::KICK => "KICK",
             &Symbol::KIN => "KIN",
@@ -4260,7 +4551,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::LRC => "LRC",
             &Symbol::LSK => "LSK",
             &Symbol::LTB => "LTB",
-            &Symbol::LTBC => "LTBC",
             &Symbol::LTCR => "LTCR",
             &Symbol::LTCU => "LTCU",
             &Symbol::LTG => "LTG",
@@ -4296,14 +4586,12 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::MEOW => "MEOW",
             &Symbol::MER => "MER",
             &Symbol::METAL => "METAL",
-            &Symbol::MG => "MG",
             &Symbol::MGM => "MGM",
             &Symbol::MGO => "MGO",
             &Symbol::MILO => "MILO",
             &Symbol::MINEX => "MINEX",
             &Symbol::MINT => "MINT",
             &Symbol::MIOTA => "MIOTA",
-            &Symbol::MIU => "MIU",
             &Symbol::MLN => "MLN",
             &Symbol::MMXVI => "MMXVI",
             &Symbol::MND => "MND",
@@ -4318,7 +4606,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::MONEY => "MONEY",
             &Symbol::MOON => "MOON",
             &Symbol::MOTO => "MOTO",
-            &Symbol::MRC => "MRC",
             &Symbol::MRJA => "MRJA",
             &Symbol::MRNG => "MRNG",
             &Symbol::MRT => "MRT",
@@ -4332,7 +4619,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::MTM => "MTM",
             &Symbol::MTNC => "MTNC",
             &Symbol::MUE => "MUE",
-            &Symbol::MUG => "MUG",
             &Symbol::MUSIC => "MUSIC",
             &Symbol::MXT => "MXT",
             &Symbol::MYB => "MYB",
@@ -4341,11 +4627,9 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::NAMO => "NAMO",
             &Symbol::NANOX => "NANOX",
             &Symbol::NAS => "NAS",
-            &Symbol::NAUT => "NAUT",
             &Symbol::NAV => "NAV",
             &Symbol::NBE => "NBE",
             &Symbol::NBIT => "NBIT",
-            &Symbol::NDAO => "NDAO",
             &Symbol::NDC => "NDC",
             &Symbol::NEBL => "NEBL",
             &Symbol::NEO => "NEO",
@@ -4364,7 +4648,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::NRO => "NRO",
             &Symbol::NSR => "NSR",
             &Symbol::NTC => "NTC",
-            &Symbol::NTCC => "NTCC",
             &Symbol::NTO => "NTO",
             &Symbol::NTRN => "NTRN",
             &Symbol::NTWK => "NTWK",
@@ -4374,7 +4657,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::NXC => "NXC",
             &Symbol::NXS => "NXS",
             &Symbol::NXT => "NXT",
-            &Symbol::NXX => "NXX",
             &Symbol::NYAN => "NYAN",
             &Symbol::NYC => "NYC",
             &Symbol::OAX => "OAX",
@@ -4385,7 +4667,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::OCT => "OCT",
             &Symbol::ODN => "ODN",
             &Symbol::OFF => "OFF",
-            &Symbol::OHM => "OHM",
             &Symbol::OK => "OK",
             &Symbol::OMC => "OMC",
             &Symbol::OMG => "OMG",
@@ -4421,7 +4702,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::PGL => "PGL",
             &Symbol::PHO => "PHO",
             &Symbol::PHS => "PHS",
-            &Symbol::PI => "PI",
             &Symbol::PIE => "PIE",
             &Symbol::PIGGY => "PIGGY",
             &Symbol::PING => "PING",
@@ -4459,10 +4739,8 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::PRIMU => "PRIMU",
             &Symbol::PRM => "PRM",
             &Symbol::PRN => "PRN",
-            &Symbol::PRO => "PRO",
             &Symbol::PROC => "PROC",
             &Symbol::PRX => "PRX",
-            &Symbol::PSB => "PSB",
             &Symbol::PST => "PST",
             &Symbol::PSY => "PSY",
             &Symbol::PTC => "PTC",
@@ -4470,7 +4748,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::PULSE => "PULSE",
             &Symbol::PURA => "PURA",
             &Symbol::PUT => "PUT",
-            &Symbol::PWR => "PWR",
             &Symbol::PX => "PX",
             &Symbol::PXC => "PXC",
             &Symbol::PXI => "PXI",
@@ -4479,7 +4756,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::QAU => "QAU",
             &Symbol::QBC => "QBC",
             &Symbol::QBK => "QBK",
-            &Symbol::QBT => "QBT",
             &Symbol::QCN => "QCN",
             &Symbol::QORA => "QORA",
             &Symbol::QRK => "QRK",
@@ -4505,7 +4781,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::REGA => "REGA",
             &Symbol::REP => "REP",
             &Symbol::REQ => "REQ",
-            &Symbol::REV => "REV",
             &Symbol::REX => "REX",
             &Symbol::RHFC => "RHFC",
             &Symbol::RHOC => "RHOC",
@@ -4526,7 +4801,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::RUBIT => "RUBIT",
             &Symbol::RUNNERS => "RUNNERS",
             &Symbol::RUP => "RUP",
-            &Symbol::BIXC => "BIXC",
             &Symbol::RUSTBITS => "RUSTBITS",
             &Symbol::RVT => "RVT",
             &Symbol::SAC => "SAC",
@@ -4555,7 +4829,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::SHND => "SHND",
             &Symbol::SHORTY => "SHORTY",
             &Symbol::SIB => "SIB",
-            &Symbol::SIC => "SIC",
             &Symbol::SIFT => "SIFT",
             &Symbol::SIGMA => "SIGMA",
             &Symbol::SIGT => "SIGT",
@@ -4569,13 +4842,10 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::SLFI => "SLFI",
             &Symbol::SLG => "SLG",
             &Symbol::SLING => "SLING",
-            &Symbol::SLM => "SLM",
             &Symbol::SLR => "SLR",
             &Symbol::SLS => "SLS",
-            &Symbol::SMART => "SMART",
             &Symbol::SMC => "SMC",
             &Symbol::SMLY => "SMLY",
-            &Symbol::SMOKE => "SMOKE",
             &Symbol::SNAKE => "SNAKE",
             &Symbol::SNC => "SNC",
             &Symbol::SND => "SND",
@@ -4589,7 +4859,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::SOJ => "SOJ",
             &Symbol::SONG => "SONG",
             &Symbol::SOON => "SOON",
-            &Symbol::SOUL => "SOUL",
             &Symbol::SPACE => "SPACE",
             &Symbol::SPEX => "SPEX",
             &Symbol::SPHR => "SPHR",
@@ -4600,7 +4869,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::SRC => "SRC",
             &Symbol::STA => "STA",
             &Symbol::START => "START",
-            &Symbol::STCN => "STCN",
             &Symbol::STEEM => "STEEM",
             &Symbol::STEPS => "STEPS",
             &Symbol::STEX => "STEX",
@@ -4673,7 +4941,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::TTC => "TTC",
             &Symbol::TURBO => "TURBO",
             &Symbol::TX => "TX",
-            &Symbol::TYC => "TYC",
             &Symbol::TYCHO => "TYCHO",
             &Symbol::TZC => "TZC",
             &Symbol::UBQ => "UBQ",
@@ -4707,9 +4974,7 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::VASH => "VASH",
             &Symbol::VC => "VC",
             &Symbol::VEC2 => "VEC2",
-            &Symbol::VEN => "VEN",
             &Symbol::VERI => "VERI",
-            &Symbol::VGC => "VGC",
             &Symbol::VIA => "VIA",
             &Symbol::VIB => "VIB",
             &Symbol::VIBE => "VIBE",
@@ -4739,11 +5004,8 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::WAVES => "WAVES",
             &Symbol::WAY => "WAY",
             &Symbol::WBB => "WBB",
-            &Symbol::WBC => "WBC",
             &Symbol::WCT => "WCT",
             &Symbol::WDC => "WDC",
-            &Symbol::WEC => "WEC",
-            &Symbol::WEX => "WEX",
             &Symbol::WGO => "WGO",
             &Symbol::WGR => "WGR",
             &Symbol::WHL => "WHL",
@@ -4815,7 +5077,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::XSPEC => "XSPEC",
             &Symbol::XST => "XST",
             &Symbol::XSTC => "XSTC",
-            &Symbol::XTC => "XTC",
             &Symbol::XTD => "XTD",
             &Symbol::XTO => "XTO",
             &Symbol::XTZ => "XTZ",
@@ -4832,7 +5093,6 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::YOC => "YOC",
             &Symbol::YOYOW => "YOYOW",
             &Symbol::ZBC => "ZBC",
-            &Symbol::ZCC => "ZCC",
             &Symbol::ZCL => "ZCL",
             &Symbol::ZEIT => "ZEIT",
             &Symbol::ZEN => "ZEN",
@@ -4857,6 +5117,162 @@ impl ::std::fmt::Debug for Symbol {
             &Symbol::DSR => "DSR",
             &Symbol::NIO => "NIO",
             &Symbol::UKG => "UKG",
+            &Symbol::ABJ => "ABJ",
+            &Symbol::AERM => "AERM",
+            &Symbol::AI => "AI",
+            &Symbol::ALQO => "ALQO",
+            &Symbol::AMM => "AMM",
+            &Symbol::ARN => "ARN",
+            &Symbol::ASTRO => "ASTRO",
+            &Symbol::B2B => "B2B",
+            &Symbol::BBR => "BBR",
+            &Symbol::BBT => "BBT",
+            &Symbol::BCD => "BCD",
+            &Symbol::BCDN => "BCDN",
+            &Symbol::BCX => "BCX",
+            &Symbol::BIX => "BIX",
+            &Symbol::BNTY => "BNTY",
+            &Symbol::BON => "BON",
+            &Symbol::BOT => "BOT",
+            &Symbol::BPL => "BPL",
+            &Symbol::BRD => "BRD",
+            &Symbol::BTC2X => "BTC2X",
+            &Symbol::BTCA => "BTCA",
+            &Symbol::BTE => "BTE",
+            &Symbol::BWK => "BWK",
+            &Symbol::CAPP => "CAPP",
+            &Symbol::CCO => "CCO",
+            &Symbol::CFD => "CFD",
+            &Symbol::CRC => "CRC",
+            &Symbol::CRED => "CRED",
+            &Symbol::CRTM => "CRTM",
+            &Symbol::CTX => "CTX",
+            &Symbol::DAI => "DAI",
+            &Symbol::DAT => "DAT",
+            &Symbol::DAV => "DAV",
+            &Symbol::DBET => "DBET",
+            &Symbol::DEW => "DEW",
+            &Symbol::DGPT => "DGPT",
+            &Symbol::DIM => "DIM",
+            &Symbol::DIVX => "DIVX",
+            &Symbol::DNA => "DNA",
+            &Symbol::DPY => "DPY",
+            &Symbol::DRGN => "DRGN",
+            &Symbol::DRP => "DRP",
+            &Symbol::DTR => "DTR",
+            &Symbol::EAG => "EAG",
+            &Symbol::EAGLE => "EAGLE",
+            &Symbol::EBCH => "EBCH",
+            &Symbol::EBTC => "EBTC",
+            &Symbol::ELF => "ELF",
+            &Symbol::EPY => "EPY",
+            &Symbol::ERC20 => "ERC20",
+            &Symbol::ERO => "ERO",
+            &Symbol::ETHOS => "ETHOS",
+            &Symbol::EVC => "EVC",
+            &Symbol::FBL => "FBL",
+            &Symbol::FIL => "FIL",
+            &Symbol::FLIXX => "FLIXX",
+            &Symbol::FRD => "FRD",
+            &Symbol::FUDD => "FUDD",
+            &Symbol::GBX => "GBX",
+            &Symbol::GLS => "GLS",
+            &Symbol::GNX => "GNX",
+            &Symbol::GRIM => "GRIM",
+            &Symbol::GRX => "GRX",
+            &Symbol::GTO => "GTO",
+            &Symbol::GVT => "GVT",
+            &Symbol::HAT => "HAT",
+            &Symbol::HOLD => "HOLD",
+            &Symbol::HST => "HST",
+            &Symbol::HWC => "HWC",
+            &Symbol::HYTV => "HYTV",
+            &Symbol::IGNIS => "IGNIS",
+            &Symbol::INK => "INK",
+            &Symbol::INN => "INN",
+            &Symbol::IPY => "IPY",
+            &Symbol::ITC => "ITC",
+            &Symbol::ITNS => "ITNS",
+            &Symbol::KBR => "KBR",
+            &Symbol::LEND => "LEND",
+            &Symbol::LOC => "LOC",
+            &Symbol::MAG => "MAG",
+            &Symbol::MAGE => "MAGE",
+            &Symbol::MDS => "MDS",
+            &Symbol::MED => "MED",
+            &Symbol::MKR => "MKR",
+            &Symbol::MNC => "MNC",
+            &Symbol::MONK => "MONK",
+            &Symbol::MUT => "MUT",
+            &Symbol::NEOG => "NEOG",
+            &Symbol::NGC => "NGC",
+            &Symbol::NUKO => "NUKO",
+            &Symbol::ONG => "ONG",
+            &Symbol::OST => "OST",
+            &Symbol::OXY => "OXY",
+            &Symbol::PAYX => "PAYX",
+            &Symbol::PBL => "PBL",
+            &Symbol::PCOIN => "PCOIN",
+            &Symbol::PFR => "PFR",
+            &Symbol::PHR => "PHR",
+            &Symbol::PKT => "PKT",
+            &Symbol::PLC => "PLC",
+            &Symbol::PLX => "PLX",
+            &Symbol::PNX => "PNX",
+            &Symbol::PRE => "PRE",
+            &Symbol::PRIX => "PRIX",
+            &Symbol::PRL => "PRL",
+            &Symbol::QASH => "QASH",
+            &Symbol::QSP => "QSP",
+            &Symbol::RDN => "RDN",
+            &Symbol::ROC => "ROC",
+            &Symbol::RYZ => "RYZ",
+            &Symbol::SAGA => "SAGA",
+            &Symbol::SBC => "SBC",
+            &Symbol::SBTC => "SBTC",
+            &Symbol::SCT => "SCT",
+            &Symbol::SEND => "SEND",
+            &Symbol::SGR => "SGR",
+            &Symbol::SISA => "SISA",
+            &Symbol::SMT => "SMT",
+            &Symbol::SNOV => "SNOV",
+            &Symbol::SPANK => "SPANK",
+            &Symbol::SPF => "SPF",
+            &Symbol::SPHTX => "SPHTX",
+            &Symbol::SRN => "SRN",
+            &Symbol::SSS => "SSS",
+            &Symbol::STAR => "STAR",
+            &Symbol::STARS => "STARS",
+            &Symbol::STC => "STC",
+            &Symbol::STORM => "STORM",
+            &Symbol::STU => "STU",
+            &Symbol::TIE => "TIE",
+            &Symbol::TIX => "TIX",
+            &Symbol::TNB => "TNB",
+            &Symbol::TOK => "TOK",
+            &Symbol::TRDT => "TRDT",
+            &Symbol::TRIA => "TRIA",
+            &Symbol::TSL => "TSL",
+            &Symbol::UAHPAY => "UAHPAY",
+            &Symbol::UBTC => "UBTC",
+            &Symbol::UFR => "UFR",
+            &Symbol::UQC => "UQC",
+            &Symbol::VEE => "VEE",
+            &Symbol::VET => "VET",
+            &Symbol::VIU => "VIU",
+            &Symbol::VOT => "VOT",
+            &Symbol::WABI => "WABI",
+            &Symbol::WAX => "WAX",
+            &Symbol::WC => "WC",
+            &Symbol::WISH => "WISH",
+            &Symbol::WRC => "WRC",
+            &Symbol::XCPO => "XCPO",
+            &Symbol::XYLO => "XYLO",
+            &Symbol::YEL => "YEL",
+            &Symbol::YTN => "YTN",
+            &Symbol::ZCG => "ZCG",
+            &Symbol::ZEPH => "ZEPH",
+            &Symbol::ZZC => "ZZC",
         };
         f.write_str(symbol)
     }

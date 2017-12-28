@@ -36,7 +36,7 @@ type Coin struct {
 }
 
 func main() {
-	resp, err := http.Get("https://api.coinmarketcap.com/v1/ticker/")
+	resp, err := http.Get("https://api.coinmarketcap.com/v1/ticker/?limit=10000")
 	if err != nil {
 		log.Fatal(err)
 	}
