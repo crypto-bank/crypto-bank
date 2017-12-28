@@ -9,6 +9,7 @@ import (
 	"log"
 	"net/http"
 	"sort"
+	"strconv"
 	"strings"
 	"text/template"
 	"unicode"
@@ -24,7 +25,7 @@ type Coin struct {
 	Rank             string `json:"rank"`
 	PriceUsd         string `json:"price_usd"`
 	PriceBtc         string `json:"price_btc"`
-	Two4HVolumeUsd   string `json:"24h_volume_usd"`
+	DailyVolumeUsd   string `json:"24h_volume_usd"`
 	MarketCapUsd     string `json:"market_cap_usd"`
 	AvailableSupply  string `json:"available_supply"`
 	TotalSupply      string `json:"total_supply"`
@@ -65,7 +66,7 @@ func main() {
 
 	// TODO: read coins.json
 	for i, coin := range coins {
-		coin.Num = i + 3
+		coin.Num = i + 3 // EUR, USD, BTC
 		coin.Num = getNum(coin, assigned, coinmap)
 
 		assigned[coin.Num] = coin.Symbol
@@ -79,17 +80,21 @@ func main() {
 		log.Fatal(err)
 	}
 
-	f, err := os.Create("src/symbols.rs")
+	compileTemplate(coins, "tools/update-coins/symbols.rs.tmpl", "src/symbols.rs")
+	compileTemplate(coins, "tools/update-coins/symbols.ts.tmpl", "src/symbols.ts")
+}
+
+func compileTemplate(coins []*Coin, src, dest string) {
+	f, err := os.Create(dest)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer f.Close()
 
-	t := template.Must(template.ParseGlob("tools/update-coins/*.tmpl"))
+	t := template.Must(template.ParseGlob(src))
 	if err := t.Execute(f, coins); err != nil {
 		log.Fatal(err)
 	}
-
 }
 
 func getNum(coin *Coin, assigned map[int]string, coinmap map[string]int) int {
@@ -130,9 +135,15 @@ func saveCoinsData(coins []*Coin) (err error) {
 func onlySeriousCoins(coins []*Coin) (res []*Coin) {
 	counts := make(map[string]int)
 	for _, coin := range coins {
-		counts[coin.Symbol]++
+		if volumeIsAcceptable(coin) {
+			counts[coin.Symbol]++
+		}
 	}
 	for _, coin := range coins {
+		if !volumeIsAcceptable(coin) {
+			log.Printf("Too low volume %q (%s)", coin.Symbol, coin.DailyVolumeUsd)
+			continue
+		}
 		if strings.Contains(coin.Symbol, "@") {
 			log.Printf("Dumb symbol %q", coin.Symbol)
 			continue
@@ -151,6 +162,17 @@ func onlySeriousCoins(coins []*Coin) (res []*Coin) {
 		res = append(res, coin)
 	}
 	return res
+}
+
+func volumeIsAcceptable(coin *Coin) bool {
+	if coin.DailyVolumeUsd == "" {
+		return false
+	}
+	dailyVolume, err := strconv.ParseFloat(coin.DailyVolumeUsd, 10)
+	if err != nil {
+		panic(err)
+	}
+	return dailyVolume > 100000.0
 }
 
 type bySymbol []*Coin
