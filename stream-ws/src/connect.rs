@@ -155,14 +155,15 @@ fn send_and_continue<P: Protocol>(msg: Message, stream: Client, handle: Handle) 
         }
     };
     // create stream events struct
-    let event = Events {
-        market: Some(P::market()),
+    let events = Events {
+        seq: None,
+        market: P::market(),
         pair: pair,
         events: msg.events,
-        timestamp: UTC::now().timestamp(),
+        timestamp: Some(UTC::now().timestamp()),
     };
-    // send event for a receiver
-    handle.sender.unbounded_send(event).unwrap();
+    // send events
+    handle.sender.unbounded_send(events).unwrap();
     // continue loop with registered pair
     continue_loop(stream, handle)
 }

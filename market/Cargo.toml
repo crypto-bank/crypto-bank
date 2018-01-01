@@ -6,10 +6,5 @@ license = "Apache-2.0"
 authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
 
 [dependencies]
-serde = "1.*.*"
-bincode = "0.9.*"
-serde_derive = "1.*.*"
-error-chain = "0.11.*"
-
-cb-util = { path = "../util", version = "0.1.*" }
-cb-currency = { path = "../currency", version = "0.0.*" }
+// cb-util = { path = "../util", version = "*" }
+// cb-currency = { path = "../currency", version = "*" }

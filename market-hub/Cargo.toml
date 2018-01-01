@@ -6,4 +6,11 @@ license = "Apache-2.0"
 authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
 
 [dependencies]
-zmq = { git = "https://github.com/erickt/rust-zmq.git" }
+
+// cb-currency = { path = "../currency", version = "*" }
+// cb-market = { path = "../market", version = "*" }
+// cb-stream = { path = "../stream", version = "*" }
+cb-stream-zmq = { path = "../stream-zmq", version = "*" }
+
+[dev-dependencies]
+cb-order-book = { path = "../order-book", version = "*" }

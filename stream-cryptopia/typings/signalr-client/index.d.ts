@@ -1,0 +1,2 @@
+
+declare module 'signalr-client';

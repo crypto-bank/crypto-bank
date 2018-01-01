@@ -3,7 +3,7 @@
 #![feature(try_from)]
 
 extern crate cb_currency as currency;
-extern crate cb_market as market;
+extern crate cb_market_data as market;
 extern crate cb_stream as stream;
 extern crate cb_stream_poloniex as poloniex;
 extern crate cb_stream_ws as ws;
@@ -44,26 +44,27 @@ fn main() {
     let conn = ::ws::connect::<::poloniex::Protocol>(handle);
 
     let reader = event_receiver.for_each(move |ev| {
+        let timestamp = ev.timestamp.unwrap();
         for e in ev.events {
             match e {
                 Event::Order(o) => println!(
                     "{} Order {:?} {}/{}",
-                    ev.timestamp,
+                    timestamp,
                     o.kind,
                     o.rate,
                     o.volume
                 ),
                 Event::Trade(t) => println!(
                     "{} Trade {:?} {}/{}",
-                    ev.timestamp,
+                    timestamp,
                     t.order.kind,
                     t.order.rate,
                     t.order.volume
                 ),
                 Event::OrderBook(ref book) => {
-                    println!("{} orderbook@{:?}", ev.timestamp, book.pair)
-                }
-                Event::HeartBeat => println!("{} heartbeat", ev.timestamp),
+                    println!("{} orderbook@{:?}", timestamp, book.pair)
+                },
+                Event::HeartBeat => println!("{} heartbeat", timestamp),
             }
         }
 

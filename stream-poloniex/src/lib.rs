@@ -3,7 +3,7 @@
 #![feature(test, try_from)]
 
 extern crate cb_currency as currency;
-extern crate cb_market as market;
+extern crate cb_market_data as market;
 extern crate cb_stream as stream;
 extern crate cb_stream_ws as ws;
 extern crate cb_util as util;
@@ -17,7 +17,7 @@ pub mod errors;
 mod parse;
 mod serialize;
 
-use market::Market;
+use market::MarketId;
 use stream::Command;
 use ws::Message;
 
@@ -39,8 +39,8 @@ impl ws::Protocol for Protocol {
     }
 
     /// Returns `Poloniex` market identifier.
-    fn market() -> Market {
-        Market::Poloniex
+    fn market() -> MarketId {
+        MarketId::Poloniex
     }
 
     /// Parses received WebSocket message.

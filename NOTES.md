@@ -1,7 +1,6 @@
 
 # Markets
 
-
 https://github.com/nlsdfnbch/bitex/tree/master/bitex/api/WSS
 
 ## Poloniex

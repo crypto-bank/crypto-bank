@@ -2,7 +2,7 @@
 
 extern crate chrono;
 extern crate cb_currency as currency;
-extern crate cb_market as market;
+extern crate cb_market_data as market;
 extern crate cb_stream as stream;
 extern crate cb_util as util;
 extern crate futures;
@@ -22,7 +22,7 @@ pub use self::connect::connect;
 pub use self::handle::Handle;
 pub use self::msg::Message;
 
-use market::Market;
+use market::MarketId;
 use stream::Command;
 
 /// WebSocket Stream protocol trait.
@@ -34,7 +34,7 @@ pub trait Protocol {
     fn address() -> &'static str;
 
     /// Returns protocol market identifier.
-    fn market() -> Market;
+    fn market() -> MarketId;
 
     /// Parses received WebSocket message.
     fn parse(msg: &str) -> Result<Option<Message>, Self::Error>;

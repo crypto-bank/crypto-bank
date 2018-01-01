@@ -45,3 +45,6 @@ target/
 *.rs.fmt
 
 *.log
+
+dist/
+node_modules/

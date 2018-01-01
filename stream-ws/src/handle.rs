@@ -34,12 +34,8 @@ impl Handle {
     }
 
     /// Creates handle with new channel.
-    pub fn with_channel(self, id: i64, pair: Pair) -> Self {
-        let mut pairs = self.pairs.clone();
-        pairs.insert(id, pair);
-        Handle {
-            pairs: pairs,
-            ..self
-        }
+    pub fn with_channel(mut self, id: i64, pair: Pair) -> Self {
+        self.pairs.insert(id, pair);
+        self
     }
 }

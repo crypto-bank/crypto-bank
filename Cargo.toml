@@ -1,17 +1,14 @@
-[package]
-name = "crypto-bank"
-description = "crypto-bank"
-version = "0.0.1"
-license = "Apache-2.0"
-authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
-
-[lib]
-path = "lib.rs"
-
-[dependencies]
-cb-currency = { version = "0.0.*", path = "./currency" }
-cb-market = { version = "0.0.*", path = "./market" }
-cb-market-event = { version = "0.0.*", path = "./market-event" }
-cb-stream = { version = "0.0.*", path = "./stream" }
-cb-stream-ws = { version = "0.0.*", path = "./stream-ws" }
-cb-util = { version = "0.1.*", path = "./util" }
+[workspace]
+members = [
+    "currency",
+    "market",
+    "market-data",
+    "market-hub",
+    "market-log",
+    "order-book",
+    "stream",
+    "stream-ws",
+    "stream-poloniex",
+    "stream-zmq",
+    "util",
+]

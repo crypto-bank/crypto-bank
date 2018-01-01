@@ -1,0 +1,21 @@
+{
+  "name": "cb-stream-zmq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "private": true,
+  "dependencies": {
+    "@types/node": "^8.5.2",
+    "cb-stream": "*",
+    "zmq": "^2.15.3"
+  }
+}

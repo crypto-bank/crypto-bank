@@ -1,0 +1,29 @@
+[package]
+name = "cb-market-log"
+description = "crypto-bank market log"
+version = "0.0.1"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+sled = "0.14.*"
+serde = "1.*.*"
+bincode = "0.9.*"
+serde_derive = "1.*.*"
+
+cb-currency = "0.0.*"
+cb-market = "0.0.*"
+cb-market-event = "0.0.*"
+
+[dev-dependencies]
+tokio-core = "0.1.*"
+multiqueue = "0.3.*"
+env_logger = "0.4.*"
+
+cb-stream = "0.0.*"
+cb-stream-ws = "0.0.*"
+cb-stream-poloniex = "0.0.*"
+cb-util = "0.1.*"
+
+[patch.crates-io]
+

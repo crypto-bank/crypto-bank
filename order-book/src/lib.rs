@@ -1,11 +1,12 @@
-//! crypto-bank market stream.
+//! order book module.
 
-extern crate bincode;
+extern crate ordered_float;
+
 extern crate cb_currency as currency;
-extern crate cb_market as market;
-extern crate cb_market_event as event;
-extern crate futures;
-extern crate multiqueue;
-#[macro_use]
-extern crate serde_derive;
+extern crate cb_market_data as market;
 
+mod order_map;
+mod order_book;
+
+pub use self::order_map::*;
+pub use self::order_book::*;
