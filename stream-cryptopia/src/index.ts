@@ -5,44 +5,50 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import * as signalR from 'signalr-client';
+import { Events } from '@cbank/market';
+import Cryptopia from '@cbank/cryptopia';
 
 import { parseMessage, Message } from './parse';
+
+const apiClient = new Cryptopia();
 
 const hubAddress = 'wss://www.cryptopia.co.nz/signalr';
 const hubList = ['notificationhub']
 
-let totalReceived = 0;
+const getCookies = async () => {
+  const resp = await axios.get('https://www.cryptopia.co.nz/Exchange');
+  return resp.headers['set-cookie'];
+};
 
-axios.get('https://www.cryptopia.co.nz/Exchange')
-  .then((resp: any) => {
-    // const $ = cheerio.load(resp.data);
-    // const token = $('input[name="__RequestVerificationToken"]').val();
-    return resp.headers['set-cookie'];
-  })
-  .then((cookies: string[]) => {
-    const client = new signalR.client(hubAddress, hubList, 2, true);
-    client.headers.cookie = cookies.filter((cookie: string) => !cookie.startsWith('___utm'));
-    client.serviceHandlers = { //Yep, I even added the merge syntax here.
-      messageReceived: (message: Message) => {
-        parseMessage(message);
-        totalReceived++;
-        if (totalReceived % 1000 === 0) {
-          console.log(`Received ${totalReceived} messages.`);
-        }
-      },
-      bound: function () { console.log("Websocket bound"); },
-      connectFailed: (error: any) => { console.log("Websocket connectFailed: ", error); },
-      connected: (connection: any) => { console.log("Websocket connected"); },
-      disconnected: () => { console.log("Websocket disconnected"); },
-      onerror: (error: any) => { console.log("Websocket onerror: ", error); },
-      bindingError: (error: any) => { console.log("Websocket bindingError: ", error); },
-      connectionLost: (error: any) => { console.log("Connection Lost: ", error); },
-      reconnecting: (retry: any) => {
-        console.log("Websocket Retrying: ", retry);
-        //return retry.count >= 3; /* cancel retry true */
-        return true;
-      }
-    };
+const tradePairsToDict = (pairs: any[]) => {
+  const pairIds: { [key: number]: string } = {};
+  pairs.forEach(pair => pairIds[pair.Id] = pair.Label);
+  return pairIds;
+}
 
-    return client.start();
-  });
+/**
+ * Stream events handler.
+ */
+export interface Handler {
+  events(events: Events): void;
+  disconnected(): void;
+}
+
+/**
+ * Connects to cryptopia stream.
+ * @param handler Event handler.
+ */
+export async function stream(handler: Handler) {
+  const pairs = tradePairsToDict(await apiClient.getTradePairs());
+  console.log(pairs);
+  const cookies = await getCookies();
+  const client = new signalR.client(hubAddress, hubList, 0, true);
+  client.headers.cookie = cookies.filter((cookie: string) => !cookie.startsWith('___utm'));
+  client.serviceHandlers = {
+    disconnected: handler.disconnected,
+    messageReceived: (message: Message) => {
+      handler.events(parseMessage(message, pairs));
+    },
+  };
+  return client.start();
+};

@@ -1,7 +1,7 @@
 /**
  * Cryptopia websocket stream.
  */
-import { Event } from 'cb-stream';
+import { Events } from '@cbank/market';
 
 /**
  * Stream action.
@@ -36,14 +36,25 @@ export interface Message {
  * 
  * @param message Stream message.
  */
-export function parseMessage(body: any) {
+export function parseMessage(body: any, pairs: { [key: number]: string }): Events {
+  const events: Events = {
+    seq: 0,
+    market: 'Cryptopia',
+    pair: { quote: '', base: '' },
+    events: []
+  };
   const message: Message = JSON.parse(body.utf8Data);
+  console.log(message)
   if (message.M) {
     message.M.forEach((msg: any) => {
       if (msg.H === 'NotificationHub' && msg.M === 'SendTradeDataUpdate') {
         msg.A.forEach((event: any) => {
           if (event.DataType === 0) {
-            console.log(getOrderKind(event), JSON.stringify(event))
+            if (event.Action === 1 || event.Action === 3) {
+              console.log('remove order', getOrderKind(event), JSON.stringify(event))
+            } else if (event.Action === 3) {
+              console.log('create order', getOrderKind(event), JSON.stringify(event))
+            }
           } else if (event.DataType === 1) {
             console.log('trade', getOrderKind(event), JSON.stringify(event))
           } else {
@@ -53,7 +64,7 @@ export function parseMessage(body: any) {
       }
     })
   }
-  return false;
+  return events;
 }
 
 const getTradeKind = (action: Action): 'Ask' | 'Bid' => {

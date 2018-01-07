@@ -1,0 +1,16 @@
+{
+  "name": "@cbank/market",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Łukasz Kurowski <crackcomm@gmail.com>",
+  "license": "Apache-2.0"
+}

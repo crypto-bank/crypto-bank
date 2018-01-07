@@ -2,7 +2,7 @@
  * @license Apache-2.0
  */
 
-import { Events, Order, Trade } from 'cb-stream';
+import { Events, Order, Trade } from '@cbank/market';
 
 /**
  * Convert to hub events.
@@ -29,7 +29,7 @@ export function convertOrders(orders: RecvOrder[], kind: 'Ask' | 'Bid'): Order[]
   return orders.map((order: RecvOrder) => ({
     kind,
     rate: order.Rate,
-    volume: order.Quantity,
+    amount: order.Quantity,
   }))
 }
 
@@ -39,7 +39,7 @@ export function convertTrades(trades: RecvTrade[]): Trade[] {
     order: {
       kind: typeToKind(trade.OrderType),
       rate: trade.Rate,
-      volume: trade.Quantity,
+      amount: trade.Quantity,
     },
     timestamp: Date.parse(trade.TimeStamp)
   }))

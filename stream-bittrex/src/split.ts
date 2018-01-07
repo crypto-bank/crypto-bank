@@ -1,14 +1,15 @@
 /**
- * 
+ * @license Apache-2.0
+ * @copyright Łukasz Kurowski <crackcomm@gmail.com>
  */
 
 import * as os from 'os';
 import * as cluster from 'cluster';
 import { chunk } from 'lodash';
 
-import { Currency } from 'cb-currency'
-import { Events } from 'cb-stream';
-import { connect, send } from 'cb-stream-zmq';
+import { Currency } from 'cryptocurrency'
+import { Events } from '@cbank/market';
+import { connect, send } from '@cbank/zeromq';
 
 import * as bittrex from './client';
 import { convert } from './convert';

@@ -1,5 +1,5 @@
 [package]
-name = "cb-util"
+name = "util"
 description = "crypto-bank utilities"
 version = "0.1.1"
 license = "Apache-2.0"

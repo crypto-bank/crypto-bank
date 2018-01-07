@@ -1,0 +1,20 @@
+[package]
+name = "streams-ws"
+description = "crypto-bank markets websocket streams"
+version = "0.2.1"
+license = "Apache-2.0"
+authors = ["Lukasz Kurowski <crackcomm@gmail.com>"]
+
+[dependencies]
+log = "0.3.*"
+chrono = "0.3.*"
+serde_json = "1.*.*"
+
+futures = "0.1.*"
+tokio-core = "0.1.*"
+multiqueue = "0.3.*"
+
+websocket = "0.20.*"
+
+market = { path = "../market" }
+util = { path = "../util" }

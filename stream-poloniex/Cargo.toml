@@ -1,5 +1,5 @@
 [package]
-name = "cb-stream-poloniex"
+name = "stream-poloniex"
 description = "crypto-bank poloniex market stream"
 version = "0.2.2"
 license = "Apache-2.0"
@@ -13,13 +13,11 @@ serde_json = "1.*.*"
 futures = "0.1.*"
 tokio-core = "0.1.*"
 
-cb-currency = { path = "../currency", version = "*" }
-cb-market-data = { path = "../market-data", version = "*" }
-cb-stream = { path = "../stream", version = "*" }
-cb-stream-ws = { path = "../stream-ws", version = "*" }
-cb-util = { path = "../util", version = "*" }
-
 websocket = "0.20.*"
+
+market = { path = "../market" }
+streams-ws = { path = "../streams-ws" }
+util = { path = "../util" }
 
 [dev-dependencies]
 tokio-core = "0.1.*"
