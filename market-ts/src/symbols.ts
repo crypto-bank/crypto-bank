@@ -23,16 +23,22 @@ export enum Currency {
   LTC = 9,
   // Ace
   ACE = 10,
+  // AdCoin
+  ACC = 11,
   // ArtByte
   ABY = 12,
+  // AudioCoin
+  ADC = 13,
+  // AdShares
+  ADST = 14,
+  // Bowhead
+  AHT = 15,
+  // AI Doctor
+  AIDOC = 17,
   // Achain
   ACT = 19,
   // Cardano
   ADA = 20,
-  // Animecoin
-  ANI = 21,
-  // APX
-  APX = 22,
   // adToken
   ADT = 26,
   // AdEx
@@ -43,12 +49,8 @@ export enum Currency {
   AE = 29,
   // Aeon
   AEON = 30,
-  // Atmos
-  ATMS = 31,
   // Agoras Tokens
   AGRS = 32,
-  // Atomic Coin
-  ATOM = 33,
   // Authorship
   ATS = 34,
   // Aion
@@ -61,18 +63,16 @@ export enum Currency {
   ALIS = 38,
   // BitBoost
   BBT = 39,
-  // BlockCDN
-  BCDN = 42,
+  // AppCoins
+  APPC = 40,
+  // ATLANT
+  ATL = 41,
   // Ambrosus
   AMB = 43,
   // Synereo
   AMP = 47,
   // Aragon
   ANT = 51,
-  // BestChain
-  BEST = 52,
-  // DAO.Casino
-  BET = 53,
   // BigONE Token
   BIG = 54,
   // Ardor
@@ -81,20 +81,24 @@ export enum Currency {
   BLUE = 62,
   // Ark
   ARK = 63,
-  // BnrtxCoin
-  BNX = 67,
   // AirSwap
   AST = 68,
   // ATBCoin
   ATB = 69,
+  // Bonpay
+  BON = 70,
   // Breakout Stake
   BRX = 71,
+  // Blockpool
+  BPL = 72,
   // ATMCoin
   ATMC = 73,
   // BitcoinZ
   BTCZ = 77,
   // Auroracoin
   AUR = 79,
+  // Bytom
+  BTM = 80,
   // Aventus
   AVT = 82,
   // BuzzCoin
@@ -103,14 +107,16 @@ export enum Currency {
   B2X = 85,
   // BitBay
   BAY = 90,
-  // Confido
-  CFD = 91,
   // Basic Attention Token
   BAT = 92,
   // Cryptojacks
   CJ = 93,
   // BitConnect
   BCC = 94,
+  // Ccore
+  CCO = 95,
+  // CryptopiaFeeShares
+  CEFS = 96,
   // Bytecoin
   BCN = 97,
   // BridgeCoin
@@ -125,34 +131,44 @@ export enum Currency {
   BELA = 102,
   // CampusCoin
   CMPCO = 103,
-  // BitCoal
-  COAL = 104,
-  // Cryptopay
-  CPAY = 105,
+  // ChessCoin
+  CHESS = 104,
+  // CFun
+  CFUN = 106,
+  // Coinlancer
+  CL = 107,
+  // CyberMiles
+  CMT = 108,
+  // Coupecoin
+  COUPE = 109,
+  // Crave
+  CRAVE = 111,
   // Bismuth
   BIS = 112,
-  // BitBean
+  // Bean Cash
   BITB = 114,
+  // Creativecoin
+  CREA = 115,
   // bitCNY
   BITCNY = 117,
-  // DaxxCoin
-  DAXX = 119,
+  // Chronos
+  CRX = 118,
   // DeepBrain Chain
   DBC = 120,
   // DecentBet
   DBET = 121,
   // bitUSD
   BITUSD = 123,
-  // Dinastycoin
-  DCY = 126,
+  // DavorCoin
+  DAV = 127,
   // Blitzcash
   BLITZ = 128,
   // BlackCoin
   BLK = 129,
   // Blocknet
   BLOCK = 131,
-  // Dix Asset
-  DIX = 134,
+  // DFSCoin
+  DFS = 135,
   // Blackmoon Crypto
   BMC = 138,
   // Binance Coin
@@ -163,72 +179,68 @@ export enum Currency {
   DNR = 141,
   // Dovu
   DOVU = 143,
-  // DigitalPrice
-  DP = 144,
-  // DCORP
-  DRP = 147,
   // EarthCoin
   EAC = 151,
+  // Desire
+  DSR = 152,
   // Breakout
   BRK = 154,
   // ECC
   ECC = 155,
   // BitSend
   BSD = 158,
+  // Ethereum Cash
+  ECASH = 159,
   // BitSoar
   BSR = 160,
   // Ellaism
   ELLA = 162,
   // BitcoinDark
   BTCD = 168,
-  // ENTCash
-  ENT = 169,
   // Eroscoin
   ERO = 172,
   // Escroco
   ESC = 173,
   // BitShares
   BTS = 176,
+  // EOT Token
+  EOT = 177,
+  // EquiTrader
+  EQT = 178,
+  // ERC20
+  ERC20 = 179,
   // Bitcore
   BTX = 180,
-  // EXRNchain
-  EXRN = 184,
   // Burst
   BURST = 185,
-  // FairCoin
-  FAIR = 186,
-  // FujiCoin
-  FJC = 188,
   // Flash
   FLASH = 189,
   // Bytecent
   BYC = 190,
   // Bitcoin Gold
   BTG = 192,
-  // FlutterCoin
-  FLT = 193,
+  // FidentiaX
+  FDX = 194,
   // Change
   CAG = 195,
   // Fastcoin
   FST = 196,
   // CannabisCoin
   CANN = 198,
-  // UGAIN
-  GAIN = 200,
-  // Global Business Revolution
-  GBRC = 205,
+  // Fonziecoin
+  FONZ = 199,
+  // FlypMe
+  FYP = 206,
   // CoinDash
   CDT = 210,
   // Mercury Protocol
   GMT = 211,
   // Cofound.it
   CFI = 213,
+  // GameChain System
+  GCS = 214,
   // ChainCoin
   CHC = 215,
-  // Grid+
-  GRID = 217,
-  // Growers International
-  GRWI = 219,
   // Clams
   CLAM = 220,
   // Game
@@ -241,10 +253,10 @@ export enum Currency {
   HBC = 228,
   // Cindicator
   CND = 229,
-  // HelloGold
-  HGT = 230,
   // Hyper Pay
   HPY = 231,
+  // Halcyon
+  HAL = 232,
   // Cryptonex
   CNX = 233,
   // HTMLCOIN
@@ -257,12 +269,10 @@ export enum Currency {
   HTML5 = 237,
   // HunterCoin
   HUC = 238,
-  // HyperStake
-  HYP = 240,
+  // Hacken
+  HKN = 239,
   // COSS
   COSS = 241,
-  // ICOS
-  ICOS = 242,
   // Circuits of Value
   COVAL = 243,
   // ICON
@@ -275,14 +285,12 @@ export enum Currency {
   IGNIS = 247,
   // Creditbit
   CRB = 248,
-  // Internxt
-  INXT = 253,
+  // High Performance Blockchain
+  HPB = 249,
   // Crown
   CRW = 254,
-  // BitDice
-  CSNO = 258,
-  // Jinn
-  JINN = 260,
+  // InsaneCoin
+  INSN = 255,
   // Karmacoin
   KARMA = 261,
   // Centra
@@ -293,12 +301,6 @@ export enum Currency {
   CURE = 264,
   // Civic
   CVC = 266,
-  // KekCoin
-  KEK = 267,
-  // Karbo
-  KRB = 271,
-  // LanaCoin
-  LANA = 273,
   // Dash
   DASH = 276,
   // LIFE
@@ -319,18 +321,24 @@ export enum Currency {
   DCT = 287,
   // Dent
   DENT = 291,
+  // MCAP
+  MCAP = 292,
+  // Measurable Data Token
+  MDT = 295,
   // DigiByte
   DGB = 296,
-  // Megacoin
-  MEC = 298,
   // DigixDAO
   DGD = 299,
+  // Magnum
+  MGM = 300,
   // Dimecoin
   DIME = 302,
-  // MergeCoin
-  MGC = 303,
+  // MinexCoin
+  MNX = 305,
   // Agrello
   DLT = 307,
+  // Monkey Project
+  MONK = 308,
   // Diamond
   DMD = 310,
   // district0x
@@ -343,44 +351,56 @@ export enum Currency {
   DOPE = 316,
   // Dotcoin
   DOT = 317,
-  // MyBit Token
-  MYB = 320,
-  // MazaCoin
-  MZC = 322,
   // Databits
   DTB = 327,
   // Neumark
   NEU = 329,
+  // Numus
+  NMS = 330,
   // Autonio
   NIO = 331,
   // Dynamic
   DYN = 332,
+  // NuShares
+  NSR = 333,
+  // Neutron
+  NTRN = 334,
+  // NumusCash
+  NUMUS = 335,
   // NobleCoin
   NOBL = 336,
   // eBoost
   EBST = 337,
   // NewYorkCoin
   NYC = 342,
+  // Cryptopia coin
+  NZDT = 343,
   // Edgeless
   EDG = 345,
   // Eidoo
   EDO = 346,
+  // onG.social
+  ONG = 347,
   // E-Dinar Coin
   EDR = 348,
+  // OP Coin
+  OPC = 349,
   // e-Gulden
   EFL = 350,
   // Opus
   OPT = 351,
+  // Simple Token
+  OST = 352,
   // EverGreenCoin
   EGC = 353,
-  // PayPeer
-  PAYP = 357,
+  // Primalbase Token
+  PBT = 359,
   // Elixir
   ELIX = 361,
+  // Project Decorum
+  PDC = 362,
   // Piggycoin
   PIGGY = 363,
-  // CryptoPing
-  PING = 364,
   // Emercoin
   EMC = 366,
   // Einsteinium
@@ -401,30 +421,30 @@ export enum Currency {
   PND = 375,
   // EOS
   EOS = 376,
-  // EuropeCoin
-  ERC = 379,
+  // Polis
+  POLIS = 377,
+  // PopularCoin
+  POP = 378,
   // Espers
   ESP = 382,
-  // Presearch
-  PRE = 383,
   // Ethereum Dark
   ETHD = 385,
   // Electroneum
   ETN = 386,
   // Metaverse ETP
   ETP = 387,
-  // Privatix
-  PRIX = 388,
-  // Quantum
-  QAU = 392,
+  // Protean
+  PRN = 389,
+  // ProCurrency
+  PROC = 390,
+  // Pure
+  PURE = 393,
   // Everex
   EVX = 394,
   // ExclusiveCoin
   EXCL = 395,
   // QLINK
   QLC = 396,
-  // Quark
-  QRK = 397,
   // Expanse
   EXP = 398,
   // Qvolta
@@ -435,34 +455,42 @@ export enum Currency {
   RBT = 404,
   // Factom
   FCT = 407,
+  // RussiaCoin
+  RC = 408,
   // Royal Kingdom Coin
   RKC = 415,
   // FoldingCoin
   FLDC = 417,
-  // Russian Miner Coin
-  RMC = 418,
   // FlorinCoin
   FLO = 419,
   // Rupee
   RUP = 420,
   // Safe Exchange Coin
   SAFEX = 421,
+  // RubleBit
+  RUBIT = 422,
   // Fargocoin
   FRGC = 428,
-  // Social
-  SCL = 429,
   // Social Send
   SEND = 430,
   // FirstCoin
   FRST = 431,
   // StrongHands
   SHND = 432,
+  // Sugar Exchange
+  SGR = 433,
   // Feathercoin
   FTC = 434,
+  // Show
+  SHOW = 435,
   // Etherparty
   FUEL = 436,
   // FunFair
   FUN = 437,
+  // SkinCoin
+  SKIN = 438,
+  // Pirate Blocks
+  SKULL = 439,
   // Gambit
   GAM = 448,
   // GameCredits
@@ -471,10 +499,6 @@ export enum Currency {
   SPRTS = 450,
   // Gas
   GAS = 452,
-  // Sharechain
-  SSS = 453,
-  // Simple Token
-  ST = 454,
   // STRAKS
   STAK = 455,
   // Golos Gold
@@ -485,50 +509,50 @@ export enum Currency {
   GBYTE = 459,
   // Global Currency Reserve
   GCR = 461,
+  // Steneum Coin
+  STN = 462,
   // GeoCoin
   GEO = 463,
   // GoldCoin
   GLD = 466,
+  // SwftCoin
+  SWFTC = 468,
   // TrueFlip
   TFL = 470,
   // Gnosis
   GNO = 471,
   // Golem
   GNT = 472,
-  // FedoraCoin
-  TIPS = 473,
   // Golos
   GOLOS = 474,
+  // Lamden
+  TAU = 475,
+  // TokenClub
+  TCT = 476,
+  // TIES Network
+  TIE = 478,
   // GridCoin
   GRC = 479,
   // Tokugawa
   TOK = 480,
-  // Terracoin
-  TRC = 481,
   // Groestlcoin
   GRS = 483,
-  // TrumpCoin
-  TRUMP = 484,
   // TrustPlus
   TRUST = 485,
-  // TittieCoin
-  TTC = 487,
+  // SwapToken
+  TOKEN = 486,
   // Matchpool
   GUP = 490,
   // GXShares
   GXS = 491,
   // Upfiring
   UFR = 492,
-  // Unitus
-  UIS = 493,
   // Unify
   UNIFY = 496,
   // Hedge
   HDG = 497,
   // UTRUST
   UTK = 500,
-  // VPNCoin
-  VASH = 501,
   // VeChain
   VEN = 503,
   // Humaniq
@@ -545,10 +569,10 @@ export enum Currency {
   HVN = 516,
   // Vsync
   VSX = 517,
-  // WorldCoin
-  WDC = 523,
-  // Wild Crypto
-  WILD = 525,
+  // WaykiChain
+  WIC = 526,
+  // Wowcoin
+  WOW = 530,
   // InvestFeed
   IFT = 532,
   // Cryptonite
@@ -567,6 +591,8 @@ export enum Currency {
   XFT = 541,
   // XGOX
   XGOX = 542,
+  // Billionaire Token
+  XBL = 543,
   // I/O Coin
   IOC = 544,
   // ION
@@ -575,16 +601,14 @@ export enum Currency {
   IOP = 546,
   // LeviarCoin
   XLC = 547,
-  // PetroDollar
-  XPD = 553,
+  // CoinonatX
+  XCXT = 548,
   // iXledger
   IXT = 555,
+  // XPlay
+  XPA = 557,
   // KuCoin Shares
   KCS = 568,
-  // Zlancer
-  ZCG = 569,
-  // ZenGold
-  ZENGOLD = 572,
   // KickCoin
   KICK = 573,
   // Kin
@@ -593,6 +617,8 @@ export enum Currency {
   KLN = 576,
   // Komodo
   KMD = 577,
+  // ZrCoin
+  ZRC = 578,
   // Kore
   KORE = 579,
   // LAToken
@@ -605,8 +631,6 @@ export enum Currency {
   LINDA = 598,
   // ChainLink
   LINK = 599,
-  // Lykke
-  LKK = 603,
   // LLToken
   LLT = 604,
   // LoMoCoin
@@ -625,8 +649,6 @@ export enum Currency {
   MAID = 624,
   // Decentraland
   MANA = 625,
-  // MCAP
-  MCAP = 636,
   // Monaco
   MCO = 638,
   // Moeda Loyalty Points
@@ -643,8 +665,6 @@ export enum Currency {
   MIOTA = 654,
   // Melon
   MLN = 656,
-  // MinexCoin
-  MNX = 661,
   // Modum
   MOD = 662,
   // Moin
@@ -655,8 +675,6 @@ export enum Currency {
   MOON = 668,
   // Kyber Network
   KNC = 671,
-  // Miners' Reward Token
-  MRT = 673,
   // Mothership
   MSP = 676,
   // Monetha
@@ -723,8 +741,6 @@ export enum Currency {
   PASC = 758,
   // TenX
   PAY = 760,
-  // Project Decorum
-  PDC = 765,
   // Pepe Cash
   PEPECASH = 768,
   // PinkCoin
@@ -855,8 +871,6 @@ export enum Currency {
   SWIFT = 966,
   // Swarm City
   SWT = 969,
-  // Sexcoin
-  SXC = 970,
   // Syndicate
   SYNX = 972,
   // Syscoin
@@ -939,8 +953,6 @@ export enum Currency {
   XEL = 1130,
   // NEM
   XEM = 1131,
-  // Infinity Economics
-  XIN = 1136,
   // Stellar
   XLM = 1140,
   // Solaris
@@ -1021,8 +1033,6 @@ export enum Currency {
   BRD = 1227,
   // Bitair
   BTCA = 1229,
-  // BitSerial
-  BTE = 1230,
   // Bulwark
   BWK = 1231,
   // Cappasity
@@ -1063,8 +1073,6 @@ export enum Currency {
   GBX = 1267,
   // Genaro Network
   GNX = 1269,
-  // GOLD Reward Token
-  GRX = 1271,
   // Gifto
   GTO = 1272,
   // Genesis Vision

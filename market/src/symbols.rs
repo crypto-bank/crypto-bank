@@ -7,7 +7,7 @@ use std::convert::TryFrom;
 use super::errors::{Error, ErrorKind};
 
 /// Currency symbol.
-#[derive(Serialize, Deserialize, PartialEq, Clone)]
+#[derive(Serialize, Deserialize, Eq, PartialEq, Copy, Clone, Hash)]
 pub enum Currency {
     /// Euro
     EUR = 1,
@@ -29,16 +29,22 @@ pub enum Currency {
     LTC = 9,
     /// Ace
     ACE = 10,
+    /// AdCoin
+    ACC = 11,
     /// ArtByte
     ABY = 12,
+    /// AudioCoin
+    ADC = 13,
+    /// AdShares
+    ADST = 14,
+    /// Bowhead
+    AHT = 15,
+    /// AI Doctor
+    AIDOC = 17,
     /// Achain
     ACT = 19,
     /// Cardano
     ADA = 20,
-    /// Animecoin
-    ANI = 21,
-    /// APX
-    APX = 22,
     /// adToken
     ADT = 26,
     /// AdEx
@@ -49,12 +55,8 @@ pub enum Currency {
     AE = 29,
     /// Aeon
     AEON = 30,
-    /// Atmos
-    ATMS = 31,
     /// Agoras Tokens
     AGRS = 32,
-    /// Atomic Coin
-    ATOM = 33,
     /// Authorship
     ATS = 34,
     /// Aion
@@ -67,18 +69,16 @@ pub enum Currency {
     ALIS = 38,
     /// BitBoost
     BBT = 39,
-    /// BlockCDN
-    BCDN = 42,
+    /// AppCoins
+    APPC = 40,
+    /// ATLANT
+    ATL = 41,
     /// Ambrosus
     AMB = 43,
     /// Synereo
     AMP = 47,
     /// Aragon
     ANT = 51,
-    /// BestChain
-    BEST = 52,
-    /// DAO.Casino
-    BET = 53,
     /// BigONE Token
     BIG = 54,
     /// Ardor
@@ -87,20 +87,24 @@ pub enum Currency {
     BLUE = 62,
     /// Ark
     ARK = 63,
-    /// BnrtxCoin
-    BNX = 67,
     /// AirSwap
     AST = 68,
     /// ATBCoin
     ATB = 69,
+    /// Bonpay
+    BON = 70,
     /// Breakout Stake
     BRX = 71,
+    /// Blockpool
+    BPL = 72,
     /// ATMCoin
     ATMC = 73,
     /// BitcoinZ
     BTCZ = 77,
     /// Auroracoin
     AUR = 79,
+    /// Bytom
+    BTM = 80,
     /// Aventus
     AVT = 82,
     /// BuzzCoin
@@ -109,14 +113,16 @@ pub enum Currency {
     B2X = 85,
     /// BitBay
     BAY = 90,
-    /// Confido
-    CFD = 91,
     /// Basic Attention Token
     BAT = 92,
     /// Cryptojacks
     CJ = 93,
     /// BitConnect
     BCC = 94,
+    /// Ccore
+    CCO = 95,
+    /// CryptopiaFeeShares
+    CEFS = 96,
     /// Bytecoin
     BCN = 97,
     /// BridgeCoin
@@ -131,34 +137,44 @@ pub enum Currency {
     BELA = 102,
     /// CampusCoin
     CMPCO = 103,
-    /// BitCoal
-    COAL = 104,
-    /// Cryptopay
-    CPAY = 105,
+    /// ChessCoin
+    CHESS = 104,
+    /// CFun
+    CFUN = 106,
+    /// Coinlancer
+    CL = 107,
+    /// CyberMiles
+    CMT = 108,
+    /// Coupecoin
+    COUPE = 109,
+    /// Crave
+    CRAVE = 111,
     /// Bismuth
     BIS = 112,
-    /// BitBean
+    /// Bean Cash
     BITB = 114,
+    /// Creativecoin
+    CREA = 115,
     /// bitCNY
     BITCNY = 117,
-    /// DaxxCoin
-    DAXX = 119,
+    /// Chronos
+    CRX = 118,
     /// DeepBrain Chain
     DBC = 120,
     /// DecentBet
     DBET = 121,
     /// bitUSD
     BITUSD = 123,
-    /// Dinastycoin
-    DCY = 126,
+    /// DavorCoin
+    DAV = 127,
     /// Blitzcash
     BLITZ = 128,
     /// BlackCoin
     BLK = 129,
     /// Blocknet
     BLOCK = 131,
-    /// Dix Asset
-    DIX = 134,
+    /// DFSCoin
+    DFS = 135,
     /// Blackmoon Crypto
     BMC = 138,
     /// Binance Coin
@@ -169,72 +185,68 @@ pub enum Currency {
     DNR = 141,
     /// Dovu
     DOVU = 143,
-    /// DigitalPrice
-    DP = 144,
-    /// DCORP
-    DRP = 147,
     /// EarthCoin
     EAC = 151,
+    /// Desire
+    DSR = 152,
     /// Breakout
     BRK = 154,
     /// ECC
     ECC = 155,
     /// BitSend
     BSD = 158,
+    /// Ethereum Cash
+    ECASH = 159,
     /// BitSoar
     BSR = 160,
     /// Ellaism
     ELLA = 162,
     /// BitcoinDark
     BTCD = 168,
-    /// ENTCash
-    ENT = 169,
     /// Eroscoin
     ERO = 172,
     /// Escroco
     ESC = 173,
     /// BitShares
     BTS = 176,
+    /// EOT Token
+    EOT = 177,
+    /// EquiTrader
+    EQT = 178,
+    /// ERC20
+    ERC20 = 179,
     /// Bitcore
     BTX = 180,
-    /// EXRNchain
-    EXRN = 184,
     /// Burst
     BURST = 185,
-    /// FairCoin
-    FAIR = 186,
-    /// FujiCoin
-    FJC = 188,
     /// Flash
     FLASH = 189,
     /// Bytecent
     BYC = 190,
     /// Bitcoin Gold
     BTG = 192,
-    /// FlutterCoin
-    FLT = 193,
+    /// FidentiaX
+    FDX = 194,
     /// Change
     CAG = 195,
     /// Fastcoin
     FST = 196,
     /// CannabisCoin
     CANN = 198,
-    /// UGAIN
-    GAIN = 200,
-    /// Global Business Revolution
-    GBRC = 205,
+    /// Fonziecoin
+    FONZ = 199,
+    /// FlypMe
+    FYP = 206,
     /// CoinDash
     CDT = 210,
     /// Mercury Protocol
     GMT = 211,
     /// Cofound.it
     CFI = 213,
+    /// GameChain System
+    GCS = 214,
     /// ChainCoin
     CHC = 215,
-    /// Grid+
-    GRID = 217,
-    /// Growers International
-    GRWI = 219,
     /// Clams
     CLAM = 220,
     /// Game
@@ -247,10 +259,10 @@ pub enum Currency {
     HBC = 228,
     /// Cindicator
     CND = 229,
-    /// HelloGold
-    HGT = 230,
     /// Hyper Pay
     HPY = 231,
+    /// Halcyon
+    HAL = 232,
     /// Cryptonex
     CNX = 233,
     /// HTMLCOIN
@@ -263,12 +275,10 @@ pub enum Currency {
     HTML5 = 237,
     /// HunterCoin
     HUC = 238,
-    /// HyperStake
-    HYP = 240,
+    /// Hacken
+    HKN = 239,
     /// COSS
     COSS = 241,
-    /// ICOS
-    ICOS = 242,
     /// Circuits of Value
     COVAL = 243,
     /// ICON
@@ -281,14 +291,12 @@ pub enum Currency {
     IGNIS = 247,
     /// Creditbit
     CRB = 248,
-    /// Internxt
-    INXT = 253,
+    /// High Performance Blockchain
+    HPB = 249,
     /// Crown
     CRW = 254,
-    /// BitDice
-    CSNO = 258,
-    /// Jinn
-    JINN = 260,
+    /// InsaneCoin
+    INSN = 255,
     /// Karmacoin
     KARMA = 261,
     /// Centra
@@ -299,12 +307,6 @@ pub enum Currency {
     CURE = 264,
     /// Civic
     CVC = 266,
-    /// KekCoin
-    KEK = 267,
-    /// Karbo
-    KRB = 271,
-    /// LanaCoin
-    LANA = 273,
     /// Dash
     DASH = 276,
     /// LIFE
@@ -325,18 +327,24 @@ pub enum Currency {
     DCT = 287,
     /// Dent
     DENT = 291,
+    /// MCAP
+    MCAP = 292,
+    /// Measurable Data Token
+    MDT = 295,
     /// DigiByte
     DGB = 296,
-    /// Megacoin
-    MEC = 298,
     /// DigixDAO
     DGD = 299,
+    /// Magnum
+    MGM = 300,
     /// Dimecoin
     DIME = 302,
-    /// MergeCoin
-    MGC = 303,
+    /// MinexCoin
+    MNX = 305,
     /// Agrello
     DLT = 307,
+    /// Monkey Project
+    MONK = 308,
     /// Diamond
     DMD = 310,
     /// district0x
@@ -349,44 +357,56 @@ pub enum Currency {
     DOPE = 316,
     /// Dotcoin
     DOT = 317,
-    /// MyBit Token
-    MYB = 320,
-    /// MazaCoin
-    MZC = 322,
     /// Databits
     DTB = 327,
     /// Neumark
     NEU = 329,
+    /// Numus
+    NMS = 330,
     /// Autonio
     NIO = 331,
     /// Dynamic
     DYN = 332,
+    /// NuShares
+    NSR = 333,
+    /// Neutron
+    NTRN = 334,
+    /// NumusCash
+    NUMUS = 335,
     /// NobleCoin
     NOBL = 336,
     /// eBoost
     EBST = 337,
     /// NewYorkCoin
     NYC = 342,
+    /// Cryptopia coin
+    NZDT = 343,
     /// Edgeless
     EDG = 345,
     /// Eidoo
     EDO = 346,
+    /// onG.social
+    ONG = 347,
     /// E-Dinar Coin
     EDR = 348,
+    /// OP Coin
+    OPC = 349,
     /// e-Gulden
     EFL = 350,
     /// Opus
     OPT = 351,
+    /// Simple Token
+    OST = 352,
     /// EverGreenCoin
     EGC = 353,
-    /// PayPeer
-    PAYP = 357,
+    /// Primalbase Token
+    PBT = 359,
     /// Elixir
     ELIX = 361,
+    /// Project Decorum
+    PDC = 362,
     /// Piggycoin
     PIGGY = 363,
-    /// CryptoPing
-    PING = 364,
     /// Emercoin
     EMC = 366,
     /// Einsteinium
@@ -407,30 +427,30 @@ pub enum Currency {
     PND = 375,
     /// EOS
     EOS = 376,
-    /// EuropeCoin
-    ERC = 379,
+    /// Polis
+    POLIS = 377,
+    /// PopularCoin
+    POP = 378,
     /// Espers
     ESP = 382,
-    /// Presearch
-    PRE = 383,
     /// Ethereum Dark
     ETHD = 385,
     /// Electroneum
     ETN = 386,
     /// Metaverse ETP
     ETP = 387,
-    /// Privatix
-    PRIX = 388,
-    /// Quantum
-    QAU = 392,
+    /// Protean
+    PRN = 389,
+    /// ProCurrency
+    PROC = 390,
+    /// Pure
+    PURE = 393,
     /// Everex
     EVX = 394,
     /// ExclusiveCoin
     EXCL = 395,
     /// QLINK
     QLC = 396,
-    /// Quark
-    QRK = 397,
     /// Expanse
     EXP = 398,
     /// Qvolta
@@ -441,34 +461,42 @@ pub enum Currency {
     RBT = 404,
     /// Factom
     FCT = 407,
+    /// RussiaCoin
+    RC = 408,
     /// Royal Kingdom Coin
     RKC = 415,
     /// FoldingCoin
     FLDC = 417,
-    /// Russian Miner Coin
-    RMC = 418,
     /// FlorinCoin
     FLO = 419,
     /// Rupee
     RUP = 420,
     /// Safe Exchange Coin
     SAFEX = 421,
+    /// RubleBit
+    RUBIT = 422,
     /// Fargocoin
     FRGC = 428,
-    /// Social
-    SCL = 429,
     /// Social Send
     SEND = 430,
     /// FirstCoin
     FRST = 431,
     /// StrongHands
     SHND = 432,
+    /// Sugar Exchange
+    SGR = 433,
     /// Feathercoin
     FTC = 434,
+    /// Show
+    SHOW = 435,
     /// Etherparty
     FUEL = 436,
     /// FunFair
     FUN = 437,
+    /// SkinCoin
+    SKIN = 438,
+    /// Pirate Blocks
+    SKULL = 439,
     /// Gambit
     GAM = 448,
     /// GameCredits
@@ -477,10 +505,6 @@ pub enum Currency {
     SPRTS = 450,
     /// Gas
     GAS = 452,
-    /// Sharechain
-    SSS = 453,
-    /// Simple Token
-    ST = 454,
     /// STRAKS
     STAK = 455,
     /// Golos Gold
@@ -491,50 +515,50 @@ pub enum Currency {
     GBYTE = 459,
     /// Global Currency Reserve
     GCR = 461,
+    /// Steneum Coin
+    STN = 462,
     /// GeoCoin
     GEO = 463,
     /// GoldCoin
     GLD = 466,
+    /// SwftCoin
+    SWFTC = 468,
     /// TrueFlip
     TFL = 470,
     /// Gnosis
     GNO = 471,
     /// Golem
     GNT = 472,
-    /// FedoraCoin
-    TIPS = 473,
     /// Golos
     GOLOS = 474,
+    /// Lamden
+    TAU = 475,
+    /// TokenClub
+    TCT = 476,
+    /// TIES Network
+    TIE = 478,
     /// GridCoin
     GRC = 479,
     /// Tokugawa
     TOK = 480,
-    /// Terracoin
-    TRC = 481,
     /// Groestlcoin
     GRS = 483,
-    /// TrumpCoin
-    TRUMP = 484,
     /// TrustPlus
     TRUST = 485,
-    /// TittieCoin
-    TTC = 487,
+    /// SwapToken
+    TOKEN = 486,
     /// Matchpool
     GUP = 490,
     /// GXShares
     GXS = 491,
     /// Upfiring
     UFR = 492,
-    /// Unitus
-    UIS = 493,
     /// Unify
     UNIFY = 496,
     /// Hedge
     HDG = 497,
     /// UTRUST
     UTK = 500,
-    /// VPNCoin
-    VASH = 501,
     /// VeChain
     VEN = 503,
     /// Humaniq
@@ -551,10 +575,10 @@ pub enum Currency {
     HVN = 516,
     /// Vsync
     VSX = 517,
-    /// WorldCoin
-    WDC = 523,
-    /// Wild Crypto
-    WILD = 525,
+    /// WaykiChain
+    WIC = 526,
+    /// Wowcoin
+    WOW = 530,
     /// InvestFeed
     IFT = 532,
     /// Cryptonite
@@ -573,6 +597,8 @@ pub enum Currency {
     XFT = 541,
     /// XGOX
     XGOX = 542,
+    /// Billionaire Token
+    XBL = 543,
     /// I/O Coin
     IOC = 544,
     /// ION
@@ -581,16 +607,14 @@ pub enum Currency {
     IOP = 546,
     /// LeviarCoin
     XLC = 547,
-    /// PetroDollar
-    XPD = 553,
+    /// CoinonatX
+    XCXT = 548,
     /// iXledger
     IXT = 555,
+    /// XPlay
+    XPA = 557,
     /// KuCoin Shares
     KCS = 568,
-    /// Zlancer
-    ZCG = 569,
-    /// ZenGold
-    ZENGOLD = 572,
     /// KickCoin
     KICK = 573,
     /// Kin
@@ -599,6 +623,8 @@ pub enum Currency {
     KLN = 576,
     /// Komodo
     KMD = 577,
+    /// ZrCoin
+    ZRC = 578,
     /// Kore
     KORE = 579,
     /// LAToken
@@ -611,8 +637,6 @@ pub enum Currency {
     LINDA = 598,
     /// ChainLink
     LINK = 599,
-    /// Lykke
-    LKK = 603,
     /// LLToken
     LLT = 604,
     /// LoMoCoin
@@ -631,8 +655,6 @@ pub enum Currency {
     MAID = 624,
     /// Decentraland
     MANA = 625,
-    /// MCAP
-    MCAP = 636,
     /// Monaco
     MCO = 638,
     /// Moeda Loyalty Points
@@ -649,8 +671,6 @@ pub enum Currency {
     MIOTA = 654,
     /// Melon
     MLN = 656,
-    /// MinexCoin
-    MNX = 661,
     /// Modum
     MOD = 662,
     /// Moin
@@ -661,8 +681,6 @@ pub enum Currency {
     MOON = 668,
     /// Kyber Network
     KNC = 671,
-    /// Miners' Reward Token
-    MRT = 673,
     /// Mothership
     MSP = 676,
     /// Monetha
@@ -729,8 +747,6 @@ pub enum Currency {
     PASC = 758,
     /// TenX
     PAY = 760,
-    /// Project Decorum
-    PDC = 765,
     /// Pepe Cash
     PEPECASH = 768,
     /// PinkCoin
@@ -861,8 +877,6 @@ pub enum Currency {
     SWIFT = 966,
     /// Swarm City
     SWT = 969,
-    /// Sexcoin
-    SXC = 970,
     /// Syndicate
     SYNX = 972,
     /// Syscoin
@@ -945,8 +959,6 @@ pub enum Currency {
     XEL = 1130,
     /// NEM
     XEM = 1131,
-    /// Infinity Economics
-    XIN = 1136,
     /// Stellar
     XLM = 1140,
     /// Solaris
@@ -1027,8 +1039,6 @@ pub enum Currency {
     BRD = 1227,
     /// Bitair
     BTCA = 1229,
-    /// BitSerial
-    BTE = 1230,
     /// Bulwark
     BWK = 1231,
     /// Cappasity
@@ -1069,8 +1079,6 @@ pub enum Currency {
     GBX = 1267,
     /// Genaro Network
     GNX = 1269,
-    /// GOLD Reward Token
-    GRX = 1271,
     /// Gifto
     GTO = 1272,
     /// Genesis Vision
@@ -1181,50 +1189,53 @@ impl<'a> TryFrom<&'a str> for Currency {
             "BCH" => Ok(Currency::BCH),
             "LTC" => Ok(Currency::LTC),
             "ACE" => Ok(Currency::ACE),
+            "ACC" => Ok(Currency::ACC),
             "ABY" => Ok(Currency::ABY),
+            "ADC" => Ok(Currency::ADC),
+            "ADST" => Ok(Currency::ADST),
+            "AHT" => Ok(Currency::AHT),
+            "AIDOC" => Ok(Currency::AIDOC),
             "ACT" => Ok(Currency::ACT),
             "ADA" => Ok(Currency::ADA),
-            "ANI" => Ok(Currency::ANI),
-            "APX" => Ok(Currency::APX),
             "ADT" => Ok(Currency::ADT),
             "ADX" => Ok(Currency::ADX),
             "ATM" => Ok(Currency::ATM),
             "AE" => Ok(Currency::AE),
             "AEON" => Ok(Currency::AEON),
-            "ATMS" => Ok(Currency::ATMS),
             "AGRS" => Ok(Currency::AGRS),
-            "ATOM" => Ok(Currency::ATOM),
             "ATS" => Ok(Currency::ATS),
             "AION" => Ok(Currency::AION),
             "AIR" => Ok(Currency::AIR),
             "B3" => Ok(Currency::B3),
             "ALIS" => Ok(Currency::ALIS),
             "BBT" => Ok(Currency::BBT),
-            "BCDN" => Ok(Currency::BCDN),
+            "APPC" => Ok(Currency::APPC),
+            "ATL" => Ok(Currency::ATL),
             "AMB" => Ok(Currency::AMB),
             "AMP" => Ok(Currency::AMP),
             "ANT" => Ok(Currency::ANT),
-            "BEST" => Ok(Currency::BEST),
-            "BET" => Ok(Currency::BET),
             "BIG" => Ok(Currency::BIG),
             "ARDR" => Ok(Currency::ARDR),
             "BLUE" => Ok(Currency::BLUE),
             "ARK" => Ok(Currency::ARK),
-            "BNX" => Ok(Currency::BNX),
             "AST" => Ok(Currency::AST),
             "ATB" => Ok(Currency::ATB),
+            "BON" => Ok(Currency::BON),
             "BRX" => Ok(Currency::BRX),
+            "BPL" => Ok(Currency::BPL),
             "ATMC" => Ok(Currency::ATMC),
             "BTCZ" => Ok(Currency::BTCZ),
             "AUR" => Ok(Currency::AUR),
+            "BTM" => Ok(Currency::BTM),
             "AVT" => Ok(Currency::AVT),
             "BUZZ" => Ok(Currency::BUZZ),
             "B2X" => Ok(Currency::B2X),
             "BAY" => Ok(Currency::BAY),
-            "CFD" => Ok(Currency::CFD),
             "BAT" => Ok(Currency::BAT),
             "CJ" => Ok(Currency::CJ),
             "BCC" => Ok(Currency::BCC),
+            "CCO" => Ok(Currency::CCO),
+            "CEFS" => Ok(Currency::CEFS),
             "BCN" => Ok(Currency::BCN),
             "BCO" => Ok(Currency::BCO),
             "BCPT" => Ok(Currency::BCPT),
@@ -1232,93 +1243,91 @@ impl<'a> TryFrom<&'a str> for Currency {
             "BDL" => Ok(Currency::BDL),
             "BELA" => Ok(Currency::BELA),
             "CMPCO" => Ok(Currency::CMPCO),
-            "COAL" => Ok(Currency::COAL),
-            "CPAY" => Ok(Currency::CPAY),
+            "CHESS" => Ok(Currency::CHESS),
+            "CFUN" => Ok(Currency::CFUN),
+            "CL" => Ok(Currency::CL),
+            "CMT" => Ok(Currency::CMT),
+            "COUPE" => Ok(Currency::COUPE),
+            "CRAVE" => Ok(Currency::CRAVE),
             "BIS" => Ok(Currency::BIS),
             "BITB" => Ok(Currency::BITB),
+            "CREA" => Ok(Currency::CREA),
             "BITCNY" => Ok(Currency::BITCNY),
-            "DAXX" => Ok(Currency::DAXX),
+            "CRX" => Ok(Currency::CRX),
             "DBC" => Ok(Currency::DBC),
             "DBET" => Ok(Currency::DBET),
             "BITUSD" => Ok(Currency::BITUSD),
-            "DCY" => Ok(Currency::DCY),
+            "DAV" => Ok(Currency::DAV),
             "BLITZ" => Ok(Currency::BLITZ),
             "BLK" => Ok(Currency::BLK),
             "BLOCK" => Ok(Currency::BLOCK),
-            "DIX" => Ok(Currency::DIX),
+            "DFS" => Ok(Currency::DFS),
             "BMC" => Ok(Currency::BMC),
             "BNB" => Ok(Currency::BNB),
             "BNT" => Ok(Currency::BNT),
             "DNR" => Ok(Currency::DNR),
             "DOVU" => Ok(Currency::DOVU),
-            "DP" => Ok(Currency::DP),
-            "DRP" => Ok(Currency::DRP),
             "EAC" => Ok(Currency::EAC),
+            "DSR" => Ok(Currency::DSR),
             "BRK" => Ok(Currency::BRK),
             "ECC" => Ok(Currency::ECC),
             "BSD" => Ok(Currency::BSD),
+            "ECASH" => Ok(Currency::ECASH),
             "BSR" => Ok(Currency::BSR),
             "ELLA" => Ok(Currency::ELLA),
             "BTCD" => Ok(Currency::BTCD),
-            "ENT" => Ok(Currency::ENT),
             "ERO" => Ok(Currency::ERO),
             "ESC" => Ok(Currency::ESC),
             "BTS" => Ok(Currency::BTS),
+            "EOT" => Ok(Currency::EOT),
+            "EQT" => Ok(Currency::EQT),
+            "ERC20" => Ok(Currency::ERC20),
             "BTX" => Ok(Currency::BTX),
-            "EXRN" => Ok(Currency::EXRN),
             "BURST" => Ok(Currency::BURST),
-            "FAIR" => Ok(Currency::FAIR),
-            "FJC" => Ok(Currency::FJC),
             "FLASH" => Ok(Currency::FLASH),
             "BYC" => Ok(Currency::BYC),
             "BTG" => Ok(Currency::BTG),
-            "FLT" => Ok(Currency::FLT),
+            "FDX" => Ok(Currency::FDX),
             "CAG" => Ok(Currency::CAG),
             "FST" => Ok(Currency::FST),
             "CANN" => Ok(Currency::CANN),
-            "GAIN" => Ok(Currency::GAIN),
-            "GBRC" => Ok(Currency::GBRC),
+            "FONZ" => Ok(Currency::FONZ),
+            "FYP" => Ok(Currency::FYP),
             "CDT" => Ok(Currency::CDT),
             "GMT" => Ok(Currency::GMT),
             "CFI" => Ok(Currency::CFI),
+            "GCS" => Ok(Currency::GCS),
             "CHC" => Ok(Currency::CHC),
-            "GRID" => Ok(Currency::GRID),
-            "GRWI" => Ok(Currency::GRWI),
             "CLAM" => Ok(Currency::CLAM),
             "GTC" => Ok(Currency::GTC),
             "CLOAK" => Ok(Currency::CLOAK),
             "CLUB" => Ok(Currency::CLUB),
             "HBC" => Ok(Currency::HBC),
             "CND" => Ok(Currency::CND),
-            "HGT" => Ok(Currency::HGT),
             "HPY" => Ok(Currency::HPY),
+            "HAL" => Ok(Currency::HAL),
             "CNX" => Ok(Currency::CNX),
             "HTML" => Ok(Currency::HTML),
             "COB" => Ok(Currency::COB),
             "COLX" => Ok(Currency::COLX),
             "HTML5" => Ok(Currency::HTML5),
             "HUC" => Ok(Currency::HUC),
-            "HYP" => Ok(Currency::HYP),
+            "HKN" => Ok(Currency::HKN),
             "COSS" => Ok(Currency::COSS),
-            "ICOS" => Ok(Currency::ICOS),
             "COVAL" => Ok(Currency::COVAL),
             "ICX" => Ok(Currency::ICX),
             "CPC" => Ok(Currency::CPC),
             "IFC" => Ok(Currency::IFC),
             "IGNIS" => Ok(Currency::IGNIS),
             "CRB" => Ok(Currency::CRB),
-            "INXT" => Ok(Currency::INXT),
+            "HPB" => Ok(Currency::HPB),
             "CRW" => Ok(Currency::CRW),
-            "CSNO" => Ok(Currency::CSNO),
-            "JINN" => Ok(Currency::JINN),
+            "INSN" => Ok(Currency::INSN),
             "KARMA" => Ok(Currency::KARMA),
             "CTR" => Ok(Currency::CTR),
             "KBR" => Ok(Currency::KBR),
             "CURE" => Ok(Currency::CURE),
             "CVC" => Ok(Currency::CVC),
-            "KEK" => Ok(Currency::KEK),
-            "KRB" => Ok(Currency::KRB),
-            "LANA" => Ok(Currency::LANA),
             "DASH" => Ok(Currency::DASH),
             "LIFE" => Ok(Currency::LIFE),
             "DATA" => Ok(Currency::DATA),
@@ -1329,37 +1338,46 @@ impl<'a> TryFrom<&'a str> for Currency {
             "LOC" => Ok(Currency::LOC),
             "DCT" => Ok(Currency::DCT),
             "DENT" => Ok(Currency::DENT),
+            "MCAP" => Ok(Currency::MCAP),
+            "MDT" => Ok(Currency::MDT),
             "DGB" => Ok(Currency::DGB),
-            "MEC" => Ok(Currency::MEC),
             "DGD" => Ok(Currency::DGD),
+            "MGM" => Ok(Currency::MGM),
             "DIME" => Ok(Currency::DIME),
-            "MGC" => Ok(Currency::MGC),
+            "MNX" => Ok(Currency::MNX),
             "DLT" => Ok(Currency::DLT),
+            "MONK" => Ok(Currency::MONK),
             "DMD" => Ok(Currency::DMD),
             "DNT" => Ok(Currency::DNT),
             "DOGE" => Ok(Currency::DOGE),
             "MOT" => Ok(Currency::MOT),
             "DOPE" => Ok(Currency::DOPE),
             "DOT" => Ok(Currency::DOT),
-            "MYB" => Ok(Currency::MYB),
-            "MZC" => Ok(Currency::MZC),
             "DTB" => Ok(Currency::DTB),
             "NEU" => Ok(Currency::NEU),
+            "NMS" => Ok(Currency::NMS),
             "NIO" => Ok(Currency::NIO),
             "DYN" => Ok(Currency::DYN),
+            "NSR" => Ok(Currency::NSR),
+            "NTRN" => Ok(Currency::NTRN),
+            "NUMUS" => Ok(Currency::NUMUS),
             "NOBL" => Ok(Currency::NOBL),
             "EBST" => Ok(Currency::EBST),
             "NYC" => Ok(Currency::NYC),
+            "NZDT" => Ok(Currency::NZDT),
             "EDG" => Ok(Currency::EDG),
             "EDO" => Ok(Currency::EDO),
+            "ONG" => Ok(Currency::ONG),
             "EDR" => Ok(Currency::EDR),
+            "OPC" => Ok(Currency::OPC),
             "EFL" => Ok(Currency::EFL),
             "OPT" => Ok(Currency::OPT),
+            "OST" => Ok(Currency::OST),
             "EGC" => Ok(Currency::EGC),
-            "PAYP" => Ok(Currency::PAYP),
+            "PBT" => Ok(Currency::PBT),
             "ELIX" => Ok(Currency::ELIX),
+            "PDC" => Ok(Currency::PDC),
             "PIGGY" => Ok(Currency::PIGGY),
-            "PING" => Ok(Currency::PING),
             "EMC" => Ok(Currency::EMC),
             "EMC2" => Ok(Currency::EMC2),
             "PIX" => Ok(Currency::PIX),
@@ -1370,70 +1388,72 @@ impl<'a> TryFrom<&'a str> for Currency {
             "PLAY" => Ok(Currency::PLAY),
             "PND" => Ok(Currency::PND),
             "EOS" => Ok(Currency::EOS),
-            "ERC" => Ok(Currency::ERC),
+            "POLIS" => Ok(Currency::POLIS),
+            "POP" => Ok(Currency::POP),
             "ESP" => Ok(Currency::ESP),
-            "PRE" => Ok(Currency::PRE),
             "ETHD" => Ok(Currency::ETHD),
             "ETN" => Ok(Currency::ETN),
             "ETP" => Ok(Currency::ETP),
-            "PRIX" => Ok(Currency::PRIX),
-            "QAU" => Ok(Currency::QAU),
+            "PRN" => Ok(Currency::PRN),
+            "PROC" => Ok(Currency::PROC),
+            "PURE" => Ok(Currency::PURE),
             "EVX" => Ok(Currency::EVX),
             "EXCL" => Ok(Currency::EXCL),
             "QLC" => Ok(Currency::QLC),
-            "QRK" => Ok(Currency::QRK),
             "EXP" => Ok(Currency::EXP),
             "QVT" => Ok(Currency::QVT),
             "RAIN" => Ok(Currency::RAIN),
             "RBT" => Ok(Currency::RBT),
             "FCT" => Ok(Currency::FCT),
+            "RC" => Ok(Currency::RC),
             "RKC" => Ok(Currency::RKC),
             "FLDC" => Ok(Currency::FLDC),
-            "RMC" => Ok(Currency::RMC),
             "FLO" => Ok(Currency::FLO),
             "RUP" => Ok(Currency::RUP),
             "SAFEX" => Ok(Currency::SAFEX),
+            "RUBIT" => Ok(Currency::RUBIT),
             "FRGC" => Ok(Currency::FRGC),
-            "SCL" => Ok(Currency::SCL),
             "SEND" => Ok(Currency::SEND),
             "FRST" => Ok(Currency::FRST),
             "SHND" => Ok(Currency::SHND),
+            "SGR" => Ok(Currency::SGR),
             "FTC" => Ok(Currency::FTC),
+            "SHOW" => Ok(Currency::SHOW),
             "FUEL" => Ok(Currency::FUEL),
             "FUN" => Ok(Currency::FUN),
+            "SKIN" => Ok(Currency::SKIN),
+            "SKULL" => Ok(Currency::SKULL),
             "GAM" => Ok(Currency::GAM),
             "GAME" => Ok(Currency::GAME),
             "SPRTS" => Ok(Currency::SPRTS),
             "GAS" => Ok(Currency::GAS),
-            "SSS" => Ok(Currency::SSS),
-            "ST" => Ok(Currency::ST),
             "STAK" => Ok(Currency::STAK),
             "GBG" => Ok(Currency::GBG),
             "STAR" => Ok(Currency::STAR),
             "GBYTE" => Ok(Currency::GBYTE),
             "GCR" => Ok(Currency::GCR),
+            "STN" => Ok(Currency::STN),
             "GEO" => Ok(Currency::GEO),
             "GLD" => Ok(Currency::GLD),
+            "SWFTC" => Ok(Currency::SWFTC),
             "TFL" => Ok(Currency::TFL),
             "GNO" => Ok(Currency::GNO),
             "GNT" => Ok(Currency::GNT),
-            "TIPS" => Ok(Currency::TIPS),
             "GOLOS" => Ok(Currency::GOLOS),
+            "TAU" => Ok(Currency::TAU),
+            "TCT" => Ok(Currency::TCT),
+            "TIE" => Ok(Currency::TIE),
             "GRC" => Ok(Currency::GRC),
             "TOK" => Ok(Currency::TOK),
-            "TRC" => Ok(Currency::TRC),
             "GRS" => Ok(Currency::GRS),
-            "TRUMP" => Ok(Currency::TRUMP),
             "TRUST" => Ok(Currency::TRUST),
-            "TTC" => Ok(Currency::TTC),
+            "TOKEN" => Ok(Currency::TOKEN),
             "GUP" => Ok(Currency::GUP),
             "GXS" => Ok(Currency::GXS),
             "UFR" => Ok(Currency::UFR),
-            "UIS" => Ok(Currency::UIS),
             "UNIFY" => Ok(Currency::UNIFY),
             "HDG" => Ok(Currency::HDG),
             "UTK" => Ok(Currency::UTK),
-            "VASH" => Ok(Currency::VASH),
             "VEN" => Ok(Currency::VEN),
             "HMQ" => Ok(Currency::HMQ),
             "VIVO" => Ok(Currency::VIVO),
@@ -1442,8 +1462,8 @@ impl<'a> TryFrom<&'a str> for Currency {
             "VRS" => Ok(Currency::VRS),
             "HVN" => Ok(Currency::HVN),
             "VSX" => Ok(Currency::VSX),
-            "WDC" => Ok(Currency::WDC),
-            "WILD" => Ok(Currency::WILD),
+            "WIC" => Ok(Currency::WIC),
+            "WOW" => Ok(Currency::WOW),
             "IFT" => Ok(Currency::IFT),
             "XCN" => Ok(Currency::XCN),
             "INCNT" => Ok(Currency::INCNT),
@@ -1453,26 +1473,26 @@ impl<'a> TryFrom<&'a str> for Currency {
             "INFX" => Ok(Currency::INFX),
             "XFT" => Ok(Currency::XFT),
             "XGOX" => Ok(Currency::XGOX),
+            "XBL" => Ok(Currency::XBL),
             "IOC" => Ok(Currency::IOC),
             "ION" => Ok(Currency::ION),
             "IOP" => Ok(Currency::IOP),
             "XLC" => Ok(Currency::XLC),
-            "XPD" => Ok(Currency::XPD),
+            "XCXT" => Ok(Currency::XCXT),
             "IXT" => Ok(Currency::IXT),
+            "XPA" => Ok(Currency::XPA),
             "KCS" => Ok(Currency::KCS),
-            "ZCG" => Ok(Currency::ZCG),
-            "ZENGOLD" => Ok(Currency::ZENGOLD),
             "KICK" => Ok(Currency::KICK),
             "KIN" => Ok(Currency::KIN),
             "KLN" => Ok(Currency::KLN),
             "KMD" => Ok(Currency::KMD),
+            "ZRC" => Ok(Currency::ZRC),
             "KORE" => Ok(Currency::KORE),
             "LA" => Ok(Currency::LA),
             "LBC" => Ok(Currency::LBC),
             "LGD" => Ok(Currency::LGD),
             "LINDA" => Ok(Currency::LINDA),
             "LINK" => Ok(Currency::LINK),
-            "LKK" => Ok(Currency::LKK),
             "LLT" => Ok(Currency::LLT),
             "LMC" => Ok(Currency::LMC),
             "ICN" => Ok(Currency::ICN),
@@ -1482,7 +1502,6 @@ impl<'a> TryFrom<&'a str> for Currency {
             "LUX" => Ok(Currency::LUX),
             "MAID" => Ok(Currency::MAID),
             "MANA" => Ok(Currency::MANA),
-            "MCAP" => Ok(Currency::MCAP),
             "MCO" => Ok(Currency::MCO),
             "MDA" => Ok(Currency::MDA),
             "MEME" => Ok(Currency::MEME),
@@ -1491,13 +1510,11 @@ impl<'a> TryFrom<&'a str> for Currency {
             "MINT" => Ok(Currency::MINT),
             "MIOTA" => Ok(Currency::MIOTA),
             "MLN" => Ok(Currency::MLN),
-            "MNX" => Ok(Currency::MNX),
             "MOD" => Ok(Currency::MOD),
             "MOIN" => Ok(Currency::MOIN),
             "MONA" => Ok(Currency::MONA),
             "MOON" => Ok(Currency::MOON),
             "KNC" => Ok(Currency::KNC),
-            "MRT" => Ok(Currency::MRT),
             "MSP" => Ok(Currency::MSP),
             "MTH" => Ok(Currency::MTH),
             "MTL" => Ok(Currency::MTL),
@@ -1531,7 +1548,6 @@ impl<'a> TryFrom<&'a str> for Currency {
             "PART" => Ok(Currency::PART),
             "PASC" => Ok(Currency::PASC),
             "PAY" => Ok(Currency::PAY),
-            "PDC" => Ok(Currency::PDC),
             "PEPECASH" => Ok(Currency::PEPECASH),
             "PINK" => Ok(Currency::PINK),
             "PIRL" => Ok(Currency::PIRL),
@@ -1597,7 +1613,6 @@ impl<'a> TryFrom<&'a str> for Currency {
             "RCN" => Ok(Currency::RCN),
             "SWIFT" => Ok(Currency::SWIFT),
             "SWT" => Ok(Currency::SWT),
-            "SXC" => Ok(Currency::SXC),
             "SYNX" => Ok(Currency::SYNX),
             "SYS" => Ok(Currency::SYS),
             "TAAS" => Ok(Currency::TAAS),
@@ -1639,7 +1654,6 @@ impl<'a> TryFrom<&'a str> for Currency {
             "XDN" => Ok(Currency::XDN),
             "XEL" => Ok(Currency::XEL),
             "XEM" => Ok(Currency::XEM),
-            "XIN" => Ok(Currency::XIN),
             "XLM" => Ok(Currency::XLM),
             "XLR" => Ok(Currency::XLR),
             "XMCC" => Ok(Currency::XMCC),
@@ -1680,7 +1694,6 @@ impl<'a> TryFrom<&'a str> for Currency {
             "BOT" => Ok(Currency::BOT),
             "BRD" => Ok(Currency::BRD),
             "BTCA" => Ok(Currency::BTCA),
-            "BTE" => Ok(Currency::BTE),
             "BWK" => Ok(Currency::BWK),
             "CAPP" => Ok(Currency::CAPP),
             "CRC" => Ok(Currency::CRC),
@@ -1701,7 +1714,6 @@ impl<'a> TryFrom<&'a str> for Currency {
             "FLIXX" => Ok(Currency::FLIXX),
             "GBX" => Ok(Currency::GBX),
             "GNX" => Ok(Currency::GNX),
-            "GRX" => Ok(Currency::GRX),
             "GTO" => Ok(Currency::GTO),
             "GVT" => Ok(Currency::GVT),
             "HAT" => Ok(Currency::HAT),
@@ -1766,50 +1778,53 @@ impl ::std::fmt::Debug for Currency {
             &Currency::BCH => "BCH",
             &Currency::LTC => "LTC",
             &Currency::ACE => "ACE",
+            &Currency::ACC => "ACC",
             &Currency::ABY => "ABY",
+            &Currency::ADC => "ADC",
+            &Currency::ADST => "ADST",
+            &Currency::AHT => "AHT",
+            &Currency::AIDOC => "AIDOC",
             &Currency::ACT => "ACT",
             &Currency::ADA => "ADA",
-            &Currency::ANI => "ANI",
-            &Currency::APX => "APX",
             &Currency::ADT => "ADT",
             &Currency::ADX => "ADX",
             &Currency::ATM => "ATM",
             &Currency::AE => "AE",
             &Currency::AEON => "AEON",
-            &Currency::ATMS => "ATMS",
             &Currency::AGRS => "AGRS",
-            &Currency::ATOM => "ATOM",
             &Currency::ATS => "ATS",
             &Currency::AION => "AION",
             &Currency::AIR => "AIR",
             &Currency::B3 => "B3",
             &Currency::ALIS => "ALIS",
             &Currency::BBT => "BBT",
-            &Currency::BCDN => "BCDN",
+            &Currency::APPC => "APPC",
+            &Currency::ATL => "ATL",
             &Currency::AMB => "AMB",
             &Currency::AMP => "AMP",
             &Currency::ANT => "ANT",
-            &Currency::BEST => "BEST",
-            &Currency::BET => "BET",
             &Currency::BIG => "BIG",
             &Currency::ARDR => "ARDR",
             &Currency::BLUE => "BLUE",
             &Currency::ARK => "ARK",
-            &Currency::BNX => "BNX",
             &Currency::AST => "AST",
             &Currency::ATB => "ATB",
+            &Currency::BON => "BON",
             &Currency::BRX => "BRX",
+            &Currency::BPL => "BPL",
             &Currency::ATMC => "ATMC",
             &Currency::BTCZ => "BTCZ",
             &Currency::AUR => "AUR",
+            &Currency::BTM => "BTM",
             &Currency::AVT => "AVT",
             &Currency::BUZZ => "BUZZ",
             &Currency::B2X => "B2X",
             &Currency::BAY => "BAY",
-            &Currency::CFD => "CFD",
             &Currency::BAT => "BAT",
             &Currency::CJ => "CJ",
             &Currency::BCC => "BCC",
+            &Currency::CCO => "CCO",
+            &Currency::CEFS => "CEFS",
             &Currency::BCN => "BCN",
             &Currency::BCO => "BCO",
             &Currency::BCPT => "BCPT",
@@ -1817,93 +1832,91 @@ impl ::std::fmt::Debug for Currency {
             &Currency::BDL => "BDL",
             &Currency::BELA => "BELA",
             &Currency::CMPCO => "CMPCO",
-            &Currency::COAL => "COAL",
-            &Currency::CPAY => "CPAY",
+            &Currency::CHESS => "CHESS",
+            &Currency::CFUN => "CFUN",
+            &Currency::CL => "CL",
+            &Currency::CMT => "CMT",
+            &Currency::COUPE => "COUPE",
+            &Currency::CRAVE => "CRAVE",
             &Currency::BIS => "BIS",
             &Currency::BITB => "BITB",
+            &Currency::CREA => "CREA",
             &Currency::BITCNY => "BITCNY",
-            &Currency::DAXX => "DAXX",
+            &Currency::CRX => "CRX",
             &Currency::DBC => "DBC",
             &Currency::DBET => "DBET",
             &Currency::BITUSD => "BITUSD",
-            &Currency::DCY => "DCY",
+            &Currency::DAV => "DAV",
             &Currency::BLITZ => "BLITZ",
             &Currency::BLK => "BLK",
             &Currency::BLOCK => "BLOCK",
-            &Currency::DIX => "DIX",
+            &Currency::DFS => "DFS",
             &Currency::BMC => "BMC",
             &Currency::BNB => "BNB",
             &Currency::BNT => "BNT",
             &Currency::DNR => "DNR",
             &Currency::DOVU => "DOVU",
-            &Currency::DP => "DP",
-            &Currency::DRP => "DRP",
             &Currency::EAC => "EAC",
+            &Currency::DSR => "DSR",
             &Currency::BRK => "BRK",
             &Currency::ECC => "ECC",
             &Currency::BSD => "BSD",
+            &Currency::ECASH => "ECASH",
             &Currency::BSR => "BSR",
             &Currency::ELLA => "ELLA",
             &Currency::BTCD => "BTCD",
-            &Currency::ENT => "ENT",
             &Currency::ERO => "ERO",
             &Currency::ESC => "ESC",
             &Currency::BTS => "BTS",
+            &Currency::EOT => "EOT",
+            &Currency::EQT => "EQT",
+            &Currency::ERC20 => "ERC20",
             &Currency::BTX => "BTX",
-            &Currency::EXRN => "EXRN",
             &Currency::BURST => "BURST",
-            &Currency::FAIR => "FAIR",
-            &Currency::FJC => "FJC",
             &Currency::FLASH => "FLASH",
             &Currency::BYC => "BYC",
             &Currency::BTG => "BTG",
-            &Currency::FLT => "FLT",
+            &Currency::FDX => "FDX",
             &Currency::CAG => "CAG",
             &Currency::FST => "FST",
             &Currency::CANN => "CANN",
-            &Currency::GAIN => "GAIN",
-            &Currency::GBRC => "GBRC",
+            &Currency::FONZ => "FONZ",
+            &Currency::FYP => "FYP",
             &Currency::CDT => "CDT",
             &Currency::GMT => "GMT",
             &Currency::CFI => "CFI",
+            &Currency::GCS => "GCS",
             &Currency::CHC => "CHC",
-            &Currency::GRID => "GRID",
-            &Currency::GRWI => "GRWI",
             &Currency::CLAM => "CLAM",
             &Currency::GTC => "GTC",
             &Currency::CLOAK => "CLOAK",
             &Currency::CLUB => "CLUB",
             &Currency::HBC => "HBC",
             &Currency::CND => "CND",
-            &Currency::HGT => "HGT",
             &Currency::HPY => "HPY",
+            &Currency::HAL => "HAL",
             &Currency::CNX => "CNX",
             &Currency::HTML => "HTML",
             &Currency::COB => "COB",
             &Currency::COLX => "COLX",
             &Currency::HTML5 => "HTML5",
             &Currency::HUC => "HUC",
-            &Currency::HYP => "HYP",
+            &Currency::HKN => "HKN",
             &Currency::COSS => "COSS",
-            &Currency::ICOS => "ICOS",
             &Currency::COVAL => "COVAL",
             &Currency::ICX => "ICX",
             &Currency::CPC => "CPC",
             &Currency::IFC => "IFC",
             &Currency::IGNIS => "IGNIS",
             &Currency::CRB => "CRB",
-            &Currency::INXT => "INXT",
+            &Currency::HPB => "HPB",
             &Currency::CRW => "CRW",
-            &Currency::CSNO => "CSNO",
-            &Currency::JINN => "JINN",
+            &Currency::INSN => "INSN",
             &Currency::KARMA => "KARMA",
             &Currency::CTR => "CTR",
             &Currency::KBR => "KBR",
             &Currency::CURE => "CURE",
             &Currency::CVC => "CVC",
-            &Currency::KEK => "KEK",
-            &Currency::KRB => "KRB",
-            &Currency::LANA => "LANA",
             &Currency::DASH => "DASH",
             &Currency::LIFE => "LIFE",
             &Currency::DATA => "DATA",
@@ -1914,37 +1927,46 @@ impl ::std::fmt::Debug for Currency {
             &Currency::LOC => "LOC",
             &Currency::DCT => "DCT",
             &Currency::DENT => "DENT",
+            &Currency::MCAP => "MCAP",
+            &Currency::MDT => "MDT",
             &Currency::DGB => "DGB",
-            &Currency::MEC => "MEC",
             &Currency::DGD => "DGD",
+            &Currency::MGM => "MGM",
             &Currency::DIME => "DIME",
-            &Currency::MGC => "MGC",
+            &Currency::MNX => "MNX",
             &Currency::DLT => "DLT",
+            &Currency::MONK => "MONK",
             &Currency::DMD => "DMD",
             &Currency::DNT => "DNT",
             &Currency::DOGE => "DOGE",
             &Currency::MOT => "MOT",
             &Currency::DOPE => "DOPE",
             &Currency::DOT => "DOT",
-            &Currency::MYB => "MYB",
-            &Currency::MZC => "MZC",
             &Currency::DTB => "DTB",
             &Currency::NEU => "NEU",
+            &Currency::NMS => "NMS",
             &Currency::NIO => "NIO",
             &Currency::DYN => "DYN",
+            &Currency::NSR => "NSR",
+            &Currency::NTRN => "NTRN",
+            &Currency::NUMUS => "NUMUS",
             &Currency::NOBL => "NOBL",
             &Currency::EBST => "EBST",
             &Currency::NYC => "NYC",
+            &Currency::NZDT => "NZDT",
             &Currency::EDG => "EDG",
             &Currency::EDO => "EDO",
+            &Currency::ONG => "ONG",
             &Currency::EDR => "EDR",
+            &Currency::OPC => "OPC",
             &Currency::EFL => "EFL",
             &Currency::OPT => "OPT",
+            &Currency::OST => "OST",
             &Currency::EGC => "EGC",
-            &Currency::PAYP => "PAYP",
+            &Currency::PBT => "PBT",
             &Currency::ELIX => "ELIX",
+            &Currency::PDC => "PDC",
             &Currency::PIGGY => "PIGGY",
-            &Currency::PING => "PING",
             &Currency::EMC => "EMC",
             &Currency::EMC2 => "EMC2",
             &Currency::PIX => "PIX",
@@ -1955,70 +1977,72 @@ impl ::std::fmt::Debug for Currency {
             &Currency::PLAY => "PLAY",
             &Currency::PND => "PND",
             &Currency::EOS => "EOS",
-            &Currency::ERC => "ERC",
+            &Currency::POLIS => "POLIS",
+            &Currency::POP => "POP",
             &Currency::ESP => "ESP",
-            &Currency::PRE => "PRE",
             &Currency::ETHD => "ETHD",
             &Currency::ETN => "ETN",
             &Currency::ETP => "ETP",
-            &Currency::PRIX => "PRIX",
-            &Currency::QAU => "QAU",
+            &Currency::PRN => "PRN",
+            &Currency::PROC => "PROC",
+            &Currency::PURE => "PURE",
             &Currency::EVX => "EVX",
             &Currency::EXCL => "EXCL",
             &Currency::QLC => "QLC",
-            &Currency::QRK => "QRK",
             &Currency::EXP => "EXP",
             &Currency::QVT => "QVT",
             &Currency::RAIN => "RAIN",
             &Currency::RBT => "RBT",
             &Currency::FCT => "FCT",
+            &Currency::RC => "RC",
             &Currency::RKC => "RKC",
             &Currency::FLDC => "FLDC",
-            &Currency::RMC => "RMC",
             &Currency::FLO => "FLO",
             &Currency::RUP => "RUP",
             &Currency::SAFEX => "SAFEX",
+            &Currency::RUBIT => "RUBIT",
             &Currency::FRGC => "FRGC",
-            &Currency::SCL => "SCL",
             &Currency::SEND => "SEND",
             &Currency::FRST => "FRST",
             &Currency::SHND => "SHND",
+            &Currency::SGR => "SGR",
             &Currency::FTC => "FTC",
+            &Currency::SHOW => "SHOW",
             &Currency::FUEL => "FUEL",
             &Currency::FUN => "FUN",
+            &Currency::SKIN => "SKIN",
+            &Currency::SKULL => "SKULL",
             &Currency::GAM => "GAM",
             &Currency::GAME => "GAME",
             &Currency::SPRTS => "SPRTS",
             &Currency::GAS => "GAS",
-            &Currency::SSS => "SSS",
-            &Currency::ST => "ST",
             &Currency::STAK => "STAK",
             &Currency::GBG => "GBG",
             &Currency::STAR => "STAR",
             &Currency::GBYTE => "GBYTE",
             &Currency::GCR => "GCR",
+            &Currency::STN => "STN",
             &Currency::GEO => "GEO",
             &Currency::GLD => "GLD",
+            &Currency::SWFTC => "SWFTC",
             &Currency::TFL => "TFL",
             &Currency::GNO => "GNO",
             &Currency::GNT => "GNT",
-            &Currency::TIPS => "TIPS",
             &Currency::GOLOS => "GOLOS",
+            &Currency::TAU => "TAU",
+            &Currency::TCT => "TCT",
+            &Currency::TIE => "TIE",
             &Currency::GRC => "GRC",
             &Currency::TOK => "TOK",
-            &Currency::TRC => "TRC",
             &Currency::GRS => "GRS",
-            &Currency::TRUMP => "TRUMP",
             &Currency::TRUST => "TRUST",
-            &Currency::TTC => "TTC",
+            &Currency::TOKEN => "TOKEN",
             &Currency::GUP => "GUP",
             &Currency::GXS => "GXS",
             &Currency::UFR => "UFR",
-            &Currency::UIS => "UIS",
             &Currency::UNIFY => "UNIFY",
             &Currency::HDG => "HDG",
             &Currency::UTK => "UTK",
-            &Currency::VASH => "VASH",
             &Currency::VEN => "VEN",
             &Currency::HMQ => "HMQ",
             &Currency::VIVO => "VIVO",
@@ -2027,8 +2051,8 @@ impl ::std::fmt::Debug for Currency {
             &Currency::VRS => "VRS",
             &Currency::HVN => "HVN",
             &Currency::VSX => "VSX",
-            &Currency::WDC => "WDC",
-            &Currency::WILD => "WILD",
+            &Currency::WIC => "WIC",
+            &Currency::WOW => "WOW",
             &Currency::IFT => "IFT",
             &Currency::XCN => "XCN",
             &Currency::INCNT => "INCNT",
@@ -2038,26 +2062,26 @@ impl ::std::fmt::Debug for Currency {
             &Currency::INFX => "INFX",
             &Currency::XFT => "XFT",
             &Currency::XGOX => "XGOX",
+            &Currency::XBL => "XBL",
             &Currency::IOC => "IOC",
             &Currency::ION => "ION",
             &Currency::IOP => "IOP",
             &Currency::XLC => "XLC",
-            &Currency::XPD => "XPD",
+            &Currency::XCXT => "XCXT",
             &Currency::IXT => "IXT",
+            &Currency::XPA => "XPA",
             &Currency::KCS => "KCS",
-            &Currency::ZCG => "ZCG",
-            &Currency::ZENGOLD => "ZENGOLD",
             &Currency::KICK => "KICK",
             &Currency::KIN => "KIN",
             &Currency::KLN => "KLN",
             &Currency::KMD => "KMD",
+            &Currency::ZRC => "ZRC",
             &Currency::KORE => "KORE",
             &Currency::LA => "LA",
             &Currency::LBC => "LBC",
             &Currency::LGD => "LGD",
             &Currency::LINDA => "LINDA",
             &Currency::LINK => "LINK",
-            &Currency::LKK => "LKK",
             &Currency::LLT => "LLT",
             &Currency::LMC => "LMC",
             &Currency::ICN => "ICN",
@@ -2067,7 +2091,6 @@ impl ::std::fmt::Debug for Currency {
             &Currency::LUX => "LUX",
             &Currency::MAID => "MAID",
             &Currency::MANA => "MANA",
-            &Currency::MCAP => "MCAP",
             &Currency::MCO => "MCO",
             &Currency::MDA => "MDA",
             &Currency::MEME => "MEME",
@@ -2076,13 +2099,11 @@ impl ::std::fmt::Debug for Currency {
             &Currency::MINT => "MINT",
             &Currency::MIOTA => "MIOTA",
             &Currency::MLN => "MLN",
-            &Currency::MNX => "MNX",
             &Currency::MOD => "MOD",
             &Currency::MOIN => "MOIN",
             &Currency::MONA => "MONA",
             &Currency::MOON => "MOON",
             &Currency::KNC => "KNC",
-            &Currency::MRT => "MRT",
             &Currency::MSP => "MSP",
             &Currency::MTH => "MTH",
             &Currency::MTL => "MTL",
@@ -2116,7 +2137,6 @@ impl ::std::fmt::Debug for Currency {
             &Currency::PART => "PART",
             &Currency::PASC => "PASC",
             &Currency::PAY => "PAY",
-            &Currency::PDC => "PDC",
             &Currency::PEPECASH => "PEPECASH",
             &Currency::PINK => "PINK",
             &Currency::PIRL => "PIRL",
@@ -2182,7 +2202,6 @@ impl ::std::fmt::Debug for Currency {
             &Currency::RCN => "RCN",
             &Currency::SWIFT => "SWIFT",
             &Currency::SWT => "SWT",
-            &Currency::SXC => "SXC",
             &Currency::SYNX => "SYNX",
             &Currency::SYS => "SYS",
             &Currency::TAAS => "TAAS",
@@ -2224,7 +2243,6 @@ impl ::std::fmt::Debug for Currency {
             &Currency::XDN => "XDN",
             &Currency::XEL => "XEL",
             &Currency::XEM => "XEM",
-            &Currency::XIN => "XIN",
             &Currency::XLM => "XLM",
             &Currency::XLR => "XLR",
             &Currency::XMCC => "XMCC",
@@ -2265,7 +2283,6 @@ impl ::std::fmt::Debug for Currency {
             &Currency::BOT => "BOT",
             &Currency::BRD => "BRD",
             &Currency::BTCA => "BTCA",
-            &Currency::BTE => "BTE",
             &Currency::BWK => "BWK",
             &Currency::CAPP => "CAPP",
             &Currency::CRC => "CRC",
@@ -2286,7 +2303,6 @@ impl ::std::fmt::Debug for Currency {
             &Currency::FLIXX => "FLIXX",
             &Currency::GBX => "GBX",
             &Currency::GNX => "GNX",
-            &Currency::GRX => "GRX",
             &Currency::GTO => "GTO",
             &Currency::GVT => "GVT",
             &Currency::HAT => "HAT",
