@@ -8,7 +8,7 @@ use super::Currency;
 use super::errors::*;
 
 /// Currency pair.
-#[derive(Serialize, Deserialize, PartialEq, Clone)]
+#[derive(Serialize, Deserialize, Eq, PartialEq, Copy, Clone, Hash)]
 pub struct CurrencyPair {
     pub quote: Currency,
     pub base: Currency,
@@ -105,6 +105,8 @@ fn parse_quote_base(s: &str) -> Result<(&str, &str)> {
 #[test]
 fn parse_and_join() {
     let pair = parse_pair("XRP_BTC").unwrap();
+    assert_eq!(format!("{:?}", pair.quote), "XRP");
+    assert_eq!(format!("{:?}", pair.base), "BTC");
     let revp = parse_pair_reversed("BTC_XRP").unwrap();
     assert_eq!(pair, revp);
     assert_eq!(join_pair(&pair, '_'), "XRP_BTC");
