@@ -9,7 +9,7 @@ use std::cmp::Ordering;
 #[derive(Serialize, Deserialize, PartialEq, Clone, Debug)]
 pub struct Trade {
     /// Trade ID, unique only for a market.
-    pub id: i64,
+    pub id: Option<i64>,
     /// Trade order.
     pub order: Order,
     /// Trade timestamp.
@@ -40,12 +40,13 @@ impl Eq for Trade {}
 #[cfg(test)]
 mod tests {
     use super::*;
+    use super::super::OrderKind;
     use test::Bencher;
     use bincode::{deserialize, serialize, Infinite};
 
     fn create_trade() -> Trade {
         Trade {
-            id: 14179278,
+            id: Some(14179278),
             order: Order {
                 kind: OrderKind::Bid,
                 rate: 0.00002789,
