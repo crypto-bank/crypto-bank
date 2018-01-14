@@ -50,6 +50,11 @@ func main() {
 
 	// Leave only serious coins
 	coins = onlySeriousCoins(coins)
+	coins = append(coins, &Coin{
+		Num:    343,
+		Name:   "Cryptopia coin",
+		Symbol: "NZDT",
+	})
 
 	// Sort coins by symbol
 	sort.Sort(bySymbol(coins))
@@ -82,7 +87,7 @@ func main() {
 	}
 
 	compileTemplate(coins, "tools/update-coins/symbols.rs.tmpl", "market/src/symbols.rs")
-	compileTemplate(coins, "tools/update-coins/symbols.ts.tmpl", "market-ts/src/index.ts")
+	compileTemplate(coins, "tools/update-coins/symbols.ts.tmpl", "market-ts/src/symbols.ts")
 }
 
 func compileTemplate(coins []*Coin, src, dest string) {
