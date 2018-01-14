@@ -3,6 +3,11 @@
  */
 
 /**
+ * Market name.
+ */
+export type Market = 'Poloniex' | 'Bitfinex' | 'Bittrex' | 'Binance' | 'Cryptopia';
+
+/**
  * Market order.
  */
 export interface Order {
@@ -16,7 +21,7 @@ export interface Order {
  * Market trade.
  */
 export interface Trade {
-  id: number;
+  id?: number;
   order: Order;
   timestamp: number;
 }
@@ -24,7 +29,7 @@ export interface Trade {
 /**
  * Currency pair.
  */
-export interface Pair {
+export interface CurrencyPair {
   quote: string;
   base: string;
 }
@@ -34,25 +39,28 @@ export interface Pair {
  */
 export interface Event {
   Trade?: Trade;
-  Order?: Order;
-  OrderBook: OrderBook;
+  NewOrder?: Order;
+  ResetOrder?: Order;
+  RemoveOrder?: Order;
+  OrderBook?: OrderBook;
 }
 
 /**
  * Market stream event.
  */
 export interface Events {
-  seq: number;
-  market: string;
-  pair: Pair;
+  pair: CurrencyPair;
+  market: Market;
   events: Event[];
+  seq?: number;
+  timestamp?: number;
 }
 
 /**
  * Order book.
  */
 export interface OrderBook {
-  pair: Pair;
+  pair: CurrencyPair;
   asks: SimpleOrder[];
   bids: SimpleOrder[];
 }
@@ -61,10 +69,8 @@ export interface OrderBook {
  * Order in books.
  */
 export interface SimpleOrder {
-  // rate
-  r: number;
-  // amount
-  a: number;
+  r: number; // rate
+  a: number; // amount
 }
 
 export * from './symbols';
