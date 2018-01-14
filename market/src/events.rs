@@ -8,8 +8,14 @@ pub enum Event {
     /// Single trade.
     Trade(Trade),
 
-    /// Single order book change.
-    Order(Order),
+    /// New order at rate.
+    NewOrder(Order),
+
+    /// Reset order amount at rate.
+    ResetOrder(Order),
+
+    /// Removed order amount at rate.
+    RemoveOrder(Order),
 
     /// Full order books update.
     OrderBook(OrderList),
