@@ -5,13 +5,41 @@ use ordered_float::OrderedFloat;
 
 use super::{CurrencyPair, Order, OrderKind, SimpleOrder};
 
+/// Simple order book.
+#[derive(Serialize, Deserialize, PartialEq, Clone, Debug)]
+pub struct OrderList {
+    /// Currency pair.
+    pub pair: Option<CurrencyPair>,
+    /// Ask orders.
+    pub asks: Vec<SimpleOrder>,
+    /// Bid orders.
+    pub bids: Vec<SimpleOrder>,
+}
+
+impl OrderList {
+    /// Inserts order to order book.
+    pub fn insert(&mut self, order: Order) {
+        match order.kind {
+            OrderKind::Ask => self.asks.push(order.into()),
+            OrderKind::Bid => self.bids.push(order.into()),
+        }
+    }
+}
+
 /// Order book for one side of orders.
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct OrderMap {
-    inner: BTreeMap<OrderedFloat<f32>, OrderedFloat<f32>>,
+    pub inner: BTreeMap<OrderedFloat<f32>, OrderedFloat<f32>>,
 }
 
 impl OrderMap {
+    /// Creates a new order map.
+    pub fn new() -> Self {
+        OrderMap {
+            inner: BTreeMap::new(),
+        }
+    }
+
     /// Inserts order amount at rate.
     pub fn insert(&mut self, order: SimpleOrder) {
         self.inner.insert(OrderedFloat(order.rate), OrderedFloat(order.amount));
@@ -23,17 +51,9 @@ impl OrderMap {
     }
 }
 
-impl Default for OrderMap {
-    fn default() -> Self {
-        OrderMap {
-            inner: BTreeMap::new(),
-        }
-    }
-}
-
 impl From<Vec<SimpleOrder>> for OrderMap {
     fn from(input: Vec<SimpleOrder>) -> Self {
-        let mut book = OrderMap::default();
+        let mut book = OrderMap::new();
         for order in input.into_iter() {
             book.insert(order);
         }
@@ -41,8 +61,21 @@ impl From<Vec<SimpleOrder>> for OrderMap {
     }
 }
 
+impl From<OrderMap> for Vec<SimpleOrder> {
+    fn from(input: OrderMap) -> Self {
+        let mut vec = Vec::new();
+        for (rate, amount) in input.inner.into_iter() {
+            vec.push(SimpleOrder {
+                rate:   *rate,
+                amount: *amount,
+            });
+        }
+        vec
+    }
+}
+
 /// Order books for both ask and bid orders.
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct OrderBooks {
     /// Currency pair.
     pub pair: Option<CurrencyPair>,
@@ -57,7 +90,8 @@ impl OrderBooks {
     pub fn new(pair: CurrencyPair) -> Self {
         OrderBooks {
             pair: Some(pair),
-            .. OrderBooks::default()
+            asks: OrderMap::new(),
+            bids: OrderMap::new(),
         }
     }
 
@@ -88,43 +122,22 @@ impl OrderBooks {
     // }
 }
 
-impl Default for OrderBooks {
-    fn default() -> Self {
-        OrderBooks {
-            pair: None,
-            asks: OrderMap::default(),
-            bids: OrderMap::default(),
-        }
-    }
-}
-
 impl From<OrderList> for OrderBooks {
     fn from(book: OrderList) -> Self {
         OrderBooks {
             pair: book.pair,
-            asks: OrderMap::from(book.asks),
-            bids: OrderMap::from(book.bids),
+            asks: book.asks.into(),
+            bids: book.bids.into(),
         }
     }
 }
 
-/// Simple order book.
-#[derive(Serialize, Deserialize, PartialEq, Clone, Debug)]
-pub struct OrderList {
-    /// Currency pair.
-    pub pair: Option<CurrencyPair>,
-    /// Ask orders.
-    pub asks: Vec<SimpleOrder>,
-    /// Bid orders.
-    pub bids: Vec<SimpleOrder>,
-}
-
-impl OrderList {
-    /// Inserts order to order book.
-    pub fn insert(&mut self, order: Order) {
-        match order.kind {
-            OrderKind::Ask => self.asks.push(order.into()),
-            OrderKind::Bid => self.bids.push(order.into()),
+impl From<OrderBooks> for OrderList {
+    fn from(book: OrderBooks) -> Self {
+        OrderList {
+            pair: book.pair,
+            asks: book.asks.into(),
+            bids: book.bids.into(),
         }
     }
 }
