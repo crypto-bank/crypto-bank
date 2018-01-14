@@ -9,6 +9,10 @@ error_chain! {
             description("invalid order kind")
             display("invalid order kind: {}", k)
         }
+        UnknownMarket(market: String) {
+            description("unknown market")
+            display("unknown market: {}", market)
+        }
         UnknownCurrency(symbol: String) {
             description("unknown currency symbol")
             display("unknown currency symbol: {}", symbol)
