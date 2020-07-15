@@ -27,7 +27,7 @@
     "axios": "^0.17.1",
     "cheerio": "^1.0.0-rc.2",
     "cryptocurrency": "*",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "signalr-client": "0.0.17"
   }
 }
