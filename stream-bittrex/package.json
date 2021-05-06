@@ -21,7 +21,7 @@
     "cryptocurrency": "*",
     "@cbank/market": "*",
     "@cbank/zeromq": "*",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "node-bittrex-api": "^0.8.1"
   }
 }
